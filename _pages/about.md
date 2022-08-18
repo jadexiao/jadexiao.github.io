@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Coda</p>
     <p>756 W Peachtree St NW</p>
     <p>Atlanta, GA 30308</p>
 
