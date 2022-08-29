@@ -327,7 +327,7 @@ footer.sticky-bottom {
     }
 
     .items:last-child {
-      padding-bottom: 8px;
+      padding-bottom: 6px;
     }
   }
 }
@@ -479,6 +479,7 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+  margin-bottom: 40px;
 
   h1 {
     color: var(--global-theme-color);
@@ -507,7 +508,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
       .preview {
         width: 100%;
         min-width: 80px;
@@ -566,12 +567,15 @@ footer.sticky-bottom {
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
+          margin-top: 12px;
+          margin-bottom: 0px;
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
           }
         }
       }
+
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;
@@ -607,6 +611,10 @@ footer.sticky-bottom {
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
       }
+    }
+
+    li:last-child {
+      margin-bottom: -0.2rem;
     }
   }
 }
