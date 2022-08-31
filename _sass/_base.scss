@@ -101,6 +101,7 @@ blockquote {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    text-align: center;
     p {
       display: inline-block;
       margin: 0;
@@ -577,7 +578,7 @@ footer.sticky-bottom {
       }
 
       .hidden {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
@@ -598,6 +599,7 @@ footer.sticky-bottom {
         }
       }
       .hidden.open {
+        margin-top: 10px;
         max-height: 100em;
         transition-property: 0.15s ease;
         -moz-transition: 0.15s ease;
