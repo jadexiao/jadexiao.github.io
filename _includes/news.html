@@ -1,6 +1,6 @@
           
-          <div class="news">
-            <h2>media</h2>
+          <div class="news" style="margin-bottom: 40px">
+            <h2>news</h2>
             {% if site.news != blank -%} 
             {%- assign news_size = site.news | size -%}
             <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
@@ -12,9 +12,9 @@
               {% assign news_limit = news_size %}
               {% endif %}
               {% for item in news limit: news_limit %} 
-                <tr style="line-height: 12px">
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
+                <tr>
+                  <th scope="row" style="padding-bottom: 0em">{{ item.date | date: "%b %-d, %Y" }}</th>
+                  <td style="padding-bottom: 0em">
                     {% if item.inline -%} 
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
                     {%- else -%} 

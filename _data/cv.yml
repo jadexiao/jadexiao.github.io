@@ -1,7 +1,7 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
+    - name: Full name
       value: Jade Xiao
     - name: Location
       value: Atlanta, GA
@@ -9,6 +9,10 @@
       value: English (native), Cantonese (conversational), Mandarin (conversational)
     - name: Citizenship
       value: New Zealand
+    - name: Key skills
+      value: Simulation modeling, cost-effectiveness analysis, statistical modeling, claims data analysis, econometrics
+    - name: Coding
+      value: C++, R, MATLAB, SQL
 
 - title: Education
   type: time_table
