@@ -3,16 +3,14 @@
   contents:
     - name: Full name
       value: Jade Xiao
-    - name: Location
-      value: Atlanta, GA
-    - name: Languages
-      value: English (native), Cantonese (conversational), Mandarin (conversational)
     - name: Citizenship
       value: New Zealand
+    - name: Languages
+      value: English (native), Cantonese (conversational), Mandarin (conversational)
     - name: Key skills
-      value: Simulation modeling, cost-effectiveness analysis, statistical modeling, claims data analysis, econometrics
+      value: Simulation modeling, cost-effectiveness analysis, statistics, data analysis, econometrics, optimization
     - name: Coding
-      value: C++, R, MATLAB, SQL
+      value: C++, R, MATLAB, SQL, HTML/CSS
 
 - title: Education
   type: time_table
@@ -97,4 +95,4 @@
 # - title: Hobbies and Interests
 #   type: list
 #   contents:
-#     - Music, Ukulele, Roller skating, Formula 1
+#     - Hobby
