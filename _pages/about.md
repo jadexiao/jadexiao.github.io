@@ -23,3 +23,5 @@ I am a PhD candidate in Operations Research at the [H. Milton Stewart School of 
 I specialize in health economics and outcomes research (HEOR) with technical expertise in simulation modeling and cost-effectiveness analysis.
 
 My doctoral thesis comprises three current and important pandemics: COVID-19, non-alcoholic fatty liver disease (NAFLD), and opioid use disorder. See [`/publications`](/publications) for details!
+
+<i>I am looking for a research scientist / data analyst role in the healthcare or tech space starting in summer 2023.</i>
