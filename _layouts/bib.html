@@ -2,12 +2,12 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+        <div class="col-sm-1 {% if entry.preview %}preview{% else %}abbr{% endif %}" style="margin-right: 35px">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
           {%- else -%}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
+          <img class="preview" src="{{ entry.preview | prepend: '/assets/img/' | relative_url }}">
           {%- endif -%}
         {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
@@ -15,9 +15,9 @@
             {%- if site.data.venues[entry.abbr].color != blank -%}
               {%- assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' -%}
             {%- endif -%}
-            <abbr class="badge" {% if venue_style %}{{venue_style}}{% endif %}><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+            <abbr class="badge"{% if venue_style %}{{venue_style}}{% endif %}>{{entry.abbr}}</abbr>
           {%- else -%}
-            <abbr class="badge">{{entry.abbr}}</abbr>
+            <abbr class="badge" style="margin-top: 5px; padding-top: 4px; padding-bottom: 3px; padding-left: 20px; padding-right: 20px">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
         </div>

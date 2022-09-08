@@ -24,4 +24,4 @@ I specialize in health economics and outcomes research (HEOR) with technical exp
 
 My doctoral thesis comprises three current and important pandemics: COVID-19, non-alcoholic fatty liver disease (NAFLD), and opioid use disorder. See [`/publications`](/publications) for details!
 
-<i>I am looking for a research scientist / data analyst role in the healthcare or tech space starting in summer 2023.</i>
+<i>I am looking for a research scientist / data analyst role in the healthcare or tech space starting summer 2023.</i>
