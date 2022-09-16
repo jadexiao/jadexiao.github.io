@@ -10,7 +10,7 @@
     - name: Key skills
       value: Simulation modeling, cost-effectiveness analysis, statistics, data analysis, econometrics, optimization
     - name: Coding
-      value: C++, R, MATLAB, SQL, HTML/CSS
+      value: R, C++, MATLAB, SQL, HTML/CSS
 
 - title: Education
   type: time_table
@@ -42,7 +42,7 @@
   type: time_table
   contents:
     - title: Graduate Research Assistant
-      institution: Georgia Institute of Technology
+      institution: Georgia Institute of Technology | Atlanta, GA
       year: Current
     - title: Research Assistant
       institution: MGH Institute for Technology Assessment | Boston, MA
@@ -55,18 +55,11 @@
         #     - Sub-description 1.
         #     - Sub-description 2.
     - title: Graduate Research Assistant
-      institution: University of Auckland
+      institution: University of Auckland | Auckland, NZ
       year: 2019
     - title: Engineering Research Intern
       institution: Fisher & Paykel Healthcare | Auckland, NZ
       year: 2017
-
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
