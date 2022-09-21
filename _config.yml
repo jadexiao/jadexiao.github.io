@@ -71,7 +71,7 @@ gitlab_username: # your GitLab user name
 twitter_username: JadeXiao4 # your Twitter handle
 linkedin_username: jade-xiao # your LinkedIn user name
 scholar_userid: Wy-IbXoAAAAJ # your Google Scholar ID
-orcid_id: # your ORCID ID
+orcid_id: 0000-0002-3517-9456 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -83,7 +83,7 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
-contact_note: # You can even add a little note about which of these is the best way to reach you.
+contact_note: Best way to reach me is via email. # You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

@@ -10,7 +10,7 @@
     - name: Key skills
       value: Simulation modeling, cost-effectiveness analysis, statistics, data analysis, econometrics, optimization
     - name: Coding
-      value: R, C++, MATLAB, SQL, HTML/CSS
+      value: C++, R, MATLAB, SQL, HTML/CSS
 
 - title: Education
   type: time_table
