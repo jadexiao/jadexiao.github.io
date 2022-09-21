@@ -16,9 +16,11 @@ nav_order: 3
       
       <p><a href="../assets/tabs/Blue_Roses_Falling.pdf" target="_blank">Blue Roses Falling</a> by Jake Shimabukuro</p>
       
-      <p><a href="../assets/tabs/오나라_(Onara).pdf" target="_blank">오나라 (Onara)</a> from 대장금 (Dae Jang Geum) OST</p>
+      <p><a href="../assets/tabs/오나라.pdf" target="_blank">오나라 (Onara)</a> from 대장금 (Dae Jang Geum) OST</p>
       
-      <p><a href="../assets/tabs/Cello_Suite_No._1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
+      <p><a href="../assets/tabs/茉莉花.pdf" target="_blank">茉莉花 (Jasmine Flower)</a>, a Chinese folk song</p>
+      
+      <p><a href="../assets/tabs/Cello_Suite_No_1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
       
       <p>I'm a huge fan of documenting everything I <a href="https://www.goodreads.com/user/show/150287338-jade" target="_blank">read</a>, <a href="https://letterboxd.com/seafarer348/" target="_blank">watch</a>, and <a href="https://rateyourmusic.com/~seafarer348" target="_blank">listen</a> to.</p>
     </div>
