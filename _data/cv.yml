@@ -8,9 +8,9 @@
     - name: Languages
       value: English (native), Cantonese (conversational), Mandarin (conversational)
     - name: Key skills
-      value: Simulation modeling, cost-effectiveness analysis, statistics, data analysis, econometrics, optimization
+      value: Simulation modeling, cost-effectiveness analysis, statistics, econometrics, optimization
     - name: Coding
-      value: Python, R C++, MATLAB, SQL, HTML/CSS
+      value: Python, R, C++, MATLAB, SQL, Gurobi
 
 - title: Education
   type: time_table
