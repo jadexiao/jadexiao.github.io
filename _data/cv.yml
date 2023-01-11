@@ -6,11 +6,11 @@
     - name: Citizenship
       value: New Zealand
     - name: Languages
-      value: English (native), Cantonese (conversational), Mandarin (conversational)
+      value: English (native), Cantonese + Mandarin (conversational)
     - name: Key skills
-      value: Simulation modeling, cost-effectiveness analysis, statistics, econometrics, optimization
-    - name: Coding
-      value: Python, R, C++, MATLAB, SQL, Gurobi
+      value: Health economics and outcomes research, health technology assessment, simulation modeling, cost-effectiveness analysis, claims database analysis, optimization, statistical modeling, predictive modeling, econometrics
+    - name: Programming
+      value: R, C++, Python, MATLAB, Gurobi, SQL, STATA
 
 - title: Education
   type: time_table
