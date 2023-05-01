@@ -29,7 +29,16 @@ nav_order: 3
       <img src="../assets/img/zoisa.jpg" class="img-fluid z-depth-1 rounded">
     </div>
     <div class="col-8">
-      This is my kitten, Zoisa, adopted on January 28, 2023.
+      This is my cat, Zoisa, adopted on January 28, 2023.
+    </div>
+  </div>
+  
+  <div class="row" style="margin-top: 20px">
+    <div class="col-4">
+      <img src="../assets/img/danielle.jpeg" class="img-fluid z-depth-1 rounded">
+    </div>
+    <div class="col-8">
+      This is my other cat, Danielle, adopted on April 18, 2023.
     </div>
   </div>
 </div>
