@@ -12,7 +12,7 @@ nav_order: 3
       <img src="../assets/img/ukulele.jpg" class="img-fluid z-depth-1 rounded">
     </div>
     <div class="col-8">
-      <p>My favourite instrument is the ukulele, my lockdown hobby turned lifelong love. I play a Kanile'a KSR-T Deluxe tenor. Find some of my tabs below. MuseScore files available upon request.</p>
+      <p>My favourite instrument is the ukulele, my lockdown hobby turned lifelong love. I play a Kanile'a KSR-T Deluxe tenor. You can find some of my tabs below. MuseScore files available upon request.</p>
       
       <p><a href="../assets/tabs/Blue_Roses_Falling.pdf" target="_blank">Blue Roses Falling</a> by Jake Shimabukuro</p>
       
@@ -29,7 +29,7 @@ nav_order: 3
       <img src="../assets/img/zoisa.jpg" class="img-fluid z-depth-1 rounded">
     </div>
     <div class="col-8">
-      This is my cat, Zoisa, adopted on January 28, 2023.
+      This is my big cat, Zoisa, adopted on January 28, 2023.
     </div>
   </div>
   
@@ -38,7 +38,7 @@ nav_order: 3
       <img src="../assets/img/danielle.jpeg" class="img-fluid z-depth-1 rounded">
     </div>
     <div class="col-8">
-      This is my other cat, Danielle, adopted on April 18, 2023.
+      This is my little cat, Danielle, adopted on April 18, 2023.
     </div>
   </div>
 </div>
