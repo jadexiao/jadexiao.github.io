@@ -2,11 +2,11 @@
   type: map
   contents:
     - name: Full name
-      value: Jade Xiao
+      value: Jade (Yingying) Xiao
     - name: Citizenship
       value: New Zealand
     - name: Languages
-      value: English (native), Cantonese + Mandarin (conversational)
+      value: English (native), Cantonese & Mandarin (conversational)
     - name: Key skills
       value: Health economics and outcomes research, health technology assessment, simulation modeling, cost-effectiveness analysis, claims database analysis, optimization, statistical modeling, predictive modeling, econometrics
     - name: Programming
@@ -44,9 +44,9 @@
     - title: Graduate Research Assistant
       institution: Georgia Institute of Technology | Atlanta, GA
       year: Current
-    - title: Research Assistant
+    - title: Graduate Research Assistant
       institution: MGH Institute for Technology Assessment | Boston, MA
-      year: 2022
+      year: Current
       # description:
       #   - Description 1.
       #   - Description 2.
@@ -60,6 +60,9 @@
     - title: Engineering Research Intern
       institution: Fisher & Paykel Healthcare | Auckland, NZ
       year: 2017
+    - title: Undergraduate Research Assistant
+      institution: University of New South Wales | Sydney, AU
+      year: 2016
 
 - title: Honors and Awards
   type: time_table
