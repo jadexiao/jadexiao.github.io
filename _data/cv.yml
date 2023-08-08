@@ -2,15 +2,15 @@
   type: map
   contents:
     - name: Full name
-      value: Jade (Yingying) Xiao
+      value: Jade Xiao
     - name: Citizenship
       value: New Zealand
     - name: Languages
-      value: English (native), Cantonese & Mandarin (conversational)
+      value: English (native), Cantonese (conversational), Mandarin (conversational)
     - name: Key skills
-      value: Health economics and outcomes research, health technology assessment, simulation modeling, cost-effectiveness analysis, claims database analysis, optimization, statistical modeling, predictive modeling, econometrics
+      value: Health economics and outcomes research, simulation modeling, statistical modeling, optimization
     - name: Programming
-      value: R, C++, Python, MATLAB, Gurobi, SQL, STATA
+      value: R, C++, Python, MATLAB, Gurobi, SQL
 
 - title: Education
   type: time_table
@@ -20,8 +20,7 @@
       year: 2023
       description:
         - "Minor: Healthcare Management Science"
-        - "Thesis title: TBD"
-        - "Advisors: Turgay Ayer, Jagpreet Chhatwal"
+        - "Thesis title: Essays in Health Economics and Outcomes Research"
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
@@ -33,7 +32,6 @@
       year: 2019
       description:
           - "Thesis title: Towards Faster Multi-Objective Shortest Path Queries"
-          - "Advisor: Andrea Raith"
     - title: Non-Graduating Exchange Program
       institution: National University of Singapore
       year: 2017
@@ -41,28 +39,18 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Graduate Research Assistant
-      institution: Georgia Institute of Technology | Atlanta, GA
-      year: Current
+    - title: Incoming Data Scientist
+      institution: Value Analytics Labs | Remote
+      year: CURRENT
     - title: Graduate Research Assistant
       institution: MGH Institute for Technology Assessment | Boston, MA
-      year: Current
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-        # - title: Description 3.
-        #   contents:
-        #     - Sub-description 1.
-        #     - Sub-description 2.
+      year: 2022
+    - title: Graduate Research Assistant
+      institution: Georgia Institute of Technology | Atlanta, GA
+      year: 2019
     - title: Graduate Research Assistant
       institution: University of Auckland | Auckland, NZ
       year: 2019
-    - title: Engineering Research Intern
-      institution: Fisher & Paykel Healthcare | Auckland, NZ
-      year: 2017
-    - title: Undergraduate Research Assistant
-      institution: University of New South Wales | Sydney, AU
-      year: 2016
 
 - title: Honors and Awards
   type: time_table

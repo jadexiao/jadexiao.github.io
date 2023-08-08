@@ -37,10 +37,10 @@ nav_order: 3
   
   <div class="row" style="margin-top: 20px">
     <div class="col-4">
-      <img src="../assets/img/danielle.jpeg" class="img-fluid z-depth-1 rounded">
+      <img src="../assets/img/dani.jpeg" class="img-fluid z-depth-1 rounded">
     </div>
     <div class="col-8">
-      This is my little cat, Danielle, adopted on April 18, 2023.
+      This is my little cat, Dani, adopted on April 18, 2023.
     </div>
   </div>
 </div>
