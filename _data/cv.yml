@@ -8,7 +8,7 @@
     - name: Languages
       value: English (native), Cantonese (conversational), Mandarin (conversational)
     - name: Key skills
-      value: Health economics and outcomes research, simulation modeling, statistical modeling, optimization
+      value: Health economics and outcomes research, simulation modeling, statistics, optimization
     - name: Programming
       value: R, C++, Python, MATLAB, Gurobi, SQL
 
