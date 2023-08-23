@@ -25,22 +25,4 @@ nav_order: 3
       <p><a href="../assets/tabs/Cello_Suite_No_1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
     </div>
   </div>
-    
-  <div class="row" style="margin-top: 20px">
-    <div class="col-4">
-      <img src="../assets/img/zoisa.jpg" class="img-fluid z-depth-1 rounded">
-    </div>
-    <div class="col-8">
-      This is my big cat, Zoisa, adopted on January 28, 2023.
-    </div>
-  </div>
-  
-  <div class="row" style="margin-top: 20px">
-    <div class="col-4">
-      <img src="../assets/img/dani.jpeg" class="img-fluid z-depth-1 rounded">
-    </div>
-    <div class="col-8">
-      This is my little cat, Dani, adopted on April 18, 2023.
-    </div>
-  </div>
 </div>
