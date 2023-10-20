@@ -5,6 +5,7 @@ _site
 .jekyll-metadata
 .DS_store
 .Rhistory
+.Rapp.history
 .ruby-version
 .tweet-cache
 Gemfile.lock

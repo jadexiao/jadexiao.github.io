@@ -3,12 +3,14 @@
   contents:
     - name: Full name
       value: Jade Xiao
-    - name: Languages
-      value: English (native), Cantonese (conversational), Mandarin (conversational)
+    - name: Citizenship
+      value: New Zealand
     - name: Key skills
-      value: Health economics and outcomes research, simulation modeling, statistics, optimization
+      value: Health technology assessment | Simulation modeling | Data analysis | Optimization
     - name: Programming
-      value: R, C++, Python, MATLAB, Gurobi, SQL
+      value: R | C++ | Python | MATLAB | Gurobi | SQL
+    - name: Languages
+      value: English (native) | Cantonese (conversational) | Mandarin (conversational)
 
 - title: Education
   type: time_table
@@ -17,8 +19,8 @@
       institution: Georgia Institute of Technology
       year: 2023
       description:
-        - "Minor: Healthcare Management Science"
-        - "Thesis title: Essays in Health Economics and Outcomes Research"
+      #  - "Minor: Healthcare Management Science"
+      #  - "Thesis title: Essays in Health Economics and Outcomes Research"
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
@@ -29,7 +31,7 @@
       institution: University of Auckland
       year: 2019
       description:
-          - "Thesis title: Towards Faster Multi-Objective Shortest Path Queries"
+      #    - "Thesis title: Towards Faster Multi-Objective Shortest Path Queries"
     - title: Non-Graduating Exchange Program
       institution: National University of Singapore
       year: 2017
