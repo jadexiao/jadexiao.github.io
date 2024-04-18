@@ -481,7 +481,7 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   h1 {
     color: var(--global-theme-color);
@@ -513,8 +513,8 @@ footer.sticky-bottom {
       margin-bottom: 1.5rem;
       .preview {
         width: 100%;
-        min-width: 70px;
-        max-width: 100px;
+        min-width: 80px;
+        max-width: 80px;
         margin-bottom: 5px;
         margin-top: 3px;
       }
@@ -571,6 +571,7 @@ footer.sticky-bottom {
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
+          margin-left: 0rem;
           margin-top: 12px;
           margin-bottom: 0px;
           &:hover {
