@@ -8,7 +8,7 @@ categories:
 ---
 *This is a joint blog post with <a href="https://www.andrewelhabr.com/" target="_blank">Andrew ElHabr</a>.*
 
-In probabilistic sensitivity analyses (PSA), model parameters are repeatedly sampled from the joint parameter space to generate a set of model runs, also known as PSA iterations.
+In probabilistic sensitivity analysis (PSA), model parameters are repeatedly sampled from the joint parameter space to generate a set of model runs, also known as PSA iterations.
 
 The choice of probability distribution for a given parameter depends on the parameter's range. If the parameter is constrained between 0 and 1, the beta distribution is commonly used, otherwise the normal or gamma distributions are a good choice.
 
