@@ -17,6 +17,8 @@ nav_order: 3
       <p><a href="../assets/tabs/Blue_Roses_Falling.pdf" target="_blank">Blue Roses Falling</a> by Jake Shimabukuro [<a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch?v=fzvFqVZvDV8" target="_blank">video</a>]</p>
       
       <p><a href="../assets/tabs/Onara.pdf" target="_blank">오나라 (Onara)</a> from 대장금 (Dae Jang Geum) OST</p>
+
+      <p><a href="../assets/tabs/Arirang.pdf" target="_blank">아리랑 (Arirang)</a>, a Korean folk song</p>
       
       <p><a href="../assets/tabs/Molihua.pdf" target="_blank">茉莉花 (Jasmine Flower)</a>, a Chinese folk song</p>
       
