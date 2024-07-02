@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://jadexiao.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://jadexiao.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2024-07-02T01:50:19+00:00</updated><id>https://jadexiao.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">how to parameterize probability distributions for psa</title><link href="https://jadexiao.github.io/blog/2024/how-to-parameterize-probability-distributions-for-psa/" rel="alternate" type="text/html" title="how to parameterize probability distributions for psa"/><published>2024-04-21T00:00:00+00:00</published><updated>2024-04-21T00:00:00+00:00</updated><id>https://jadexiao.github.io/blog/2024/how-to-parameterize-probability-distributions-for-psa</id><content type="html" xml:base="https://jadexiao.github.io/blog/2024/how-to-parameterize-probability-distributions-for-psa/"><![CDATA[<p><em>This is a joint blog post with <a href="https://www.andrewelhabr.com/" target="_blank">Andrew ElHabr</a>.</em></p> <p>In probabilistic sensitivity analysis (PSA), model parameters are repeatedly sampled from the joint parameter space to generate a set of model runs, also known as PSA iterations.</p> <p>The choice of probability distribution for a given parameter depends on the parameter’s range. If the parameter is constrained between 0 and 1, the beta distribution is commonly used, otherwise the normal or gamma distributions are a good choice.</p> <p>Typically, for each parameter, we will have a base case value \((B)\), a lower value \((L)\), and an upper value \((U)\). One common approach to designing a probability distribution is to assume \(B\) is the median, and \(L\) and \(U\) are the 2.5<sup>th</sup> and 97.5<sup>th</sup> percentiles, i.e., the bounds of the 95% confidence interval.</p> <p>This tutorial will explain how to parameterize the normal, beta, and gamma distributions under the above assumption.</p> <p style="margin-top: 25px"></p> <h5 id="normal-distribution">Normal distribution</h5> <p>If \(L\) and \(U\) are equidistant from \(B\) <em>and</em> a symmetrical distribution is desired, then the normal distribution is ideal. Recall from high school statistics, that (1) the mean of the normal distribution is equal to its median; and (2) 1.96 standard deviations above and below the mean delineate the 95% confidence interval. Therefore, the distribution we need is:</p> \[{\rm Normal}\bigg(B,\ \frac{B-L}{1.96}\bigg).\] <p style="margin-top: 25px"></p> <h5 id="beta-distribution">Beta distribution</h5> <p>There is no analytical way to do this so we have to resort to some kind of calibration approach. Here is an example using simulated annealing in R:</p> <figure class="highlight"><pre><code class="language-r" data-lang="r"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="code"><pre><span class="w"> </span><span class="n">library</span><span class="p">(</span><span class="n">GenSA</span><span class="p">)</span><span class="w">
+ 
+ </span><span class="c1"># Quantile targets</span><span class="w">
+ </span><span class="n">target</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">U</span><span class="p">)</span><span class="w">
+ 
+ </span><span class="c1"># MSE between estimated quantiles and target quantiles</span><span class="w">
+ </span><span class="n">score</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">params</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+   </span><span class="n">est</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">qbeta</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">0.025</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.975</span><span class="p">),</span><span class="w"> </span><span class="n">shape1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">shape2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+   </span><span class="nf">return</span><span class="p">(</span><span class="nf">sum</span><span class="p">((</span><span class="n">est</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+ </span><span class="p">}</span><span class="w">
+
+ </span><span class="c1"># Upper and lower bounds for shape1 and shape2</span><span class="w">
+ </span><span class="n">lower</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
+ </span><span class="n">upper</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">200</span><span class="p">,</span><span class="w"> </span><span class="m">200</span><span class="p">)</span><span class="w">
+
+ </span><span class="c1"># Setting the random seed is good practice</span><span class="w">
+ </span><span class="n">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">
+ 
+ </span><span class="c1"># Run calibration</span><span class="w">
+ </span><span class="n">opt</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">GenSA</span><span class="p">(</span><span class="n">par</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mapply</span><span class="p">(</span><span class="n">runif</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">lower</span><span class="p">,</span><span class="w"> </span><span class="n">upper</span><span class="p">),</span><span class="w">
+             </span><span class="n">fn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="p">,</span><span class="w">
+             </span><span class="n">lower</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lower</span><span class="p">,</span><span class="w">
+             </span><span class="n">upper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">upper</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></figure> <p style="margin-top: 25px"></p> <h5 id="gamma-distribution">Gamma distribution</h5> <p>Same as the beta distribution, we have to use calibration. Simply replace the previous score function with:</p> <figure class="highlight"><pre><code class="language-r" data-lang="r"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">params</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+   </span><span class="n">est</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">qgamma</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">0.025</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.975</span><span class="p">),</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+   </span><span class="nf">return</span><span class="p">(</span><span class="nf">sum</span><span class="p">((</span><span class="n">est</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+ </span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure> <p style="margin-top: 25px"></p> <h5 id="validation">Validation</h5> <p>The final step is to check that the fitted distribution looks reasonable (make a plot!) and its quantiles do indeed match up with \(B\), \(L\), and \(U\).</p>]]></content><author><name></name></author><category term="tutorials"/><category term="code"/><category term="cea"/><summary type="html"><![CDATA[This is a joint blog post with Andrew ElHabr.]]></summary></entry></feed>
