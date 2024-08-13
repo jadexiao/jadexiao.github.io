@@ -20,7 +20,7 @@ nav_order: 3
 
       <p><a href="../assets/tabs/Arirang.pdf" target="_blank">아리랑 (Arirang)</a>, a Korean folk song</p>
       
-      <p><a href="../assets/tabs/Molihua.pdf" target="_blank">茉莉花 (Jasmine Flower)</a>, a Chinese folk song</p>
+      <p><a href="../assets/tabs/Jasmine_Flower.pdf" target="_blank">茉莉花 (Jasmine Flower)</a>, a Chinese folk song</p>
       
       <p><a href="../assets/tabs/Auld_Lang_Syne.pdf" target="_blank">Auld Lang Syne</a>, a Scottish folk song [<a href="https://www.instagram.com/p/Cty2Ps2rEMO/" target="_blank">video</a>]</p>
       
