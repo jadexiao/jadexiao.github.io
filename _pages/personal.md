@@ -26,6 +26,8 @@ nav_order: 3
 
       <p><a href="../assets/tabs/Cello_Suite_No_1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
 
+      <p><a href="../assets/tabs/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> by mabanua</p>
+
       <p><a href="../assets/tabs/Something.pdf" target="_blank">Something</a> by George Harrison [<a href="https://www.youtube.com/watch?v=naJlZujI2Ps" target="_blank">video</a>]</p>
       
       <p><a href="../assets/tabs/Yellow_Bird.pdf" target="_blank">Yellow Bird</a> by Michel Mauléart Monton</p>
