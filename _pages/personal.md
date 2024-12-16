@@ -31,6 +31,10 @@ nav_order: 3
       <p><a href="../assets/tabs/Something.pdf" target="_blank">Something</a> by George Harrison [<a href="https://www.youtube.com/watch?v=naJlZujI2Ps" target="_blank">video</a>]</p>
       
       <p><a href="../assets/tabs/Yellow_Bird.pdf" target="_blank">Yellow Bird</a> by Michel Mauléart Monton</p>
+
+      <p>And some piano too.</p>
+
+      <p><a href="../assets/score/If_You_Love_Me_For_Me.pdf" target="_blank">If You Love Me For Me</a> by Arnie Roth [<a href="https://www.youtube.com/watch?v=SMe10v_rRbo">video</a>]</p>
     </div>
   </div>
 </div>
