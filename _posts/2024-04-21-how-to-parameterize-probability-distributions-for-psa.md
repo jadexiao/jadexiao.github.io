@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how to parameterize probability distributions for psa
+title: How to parameterize probability distributions for PSA
 date: 2024-04-21
 description:
 tags: tutorials code cea
