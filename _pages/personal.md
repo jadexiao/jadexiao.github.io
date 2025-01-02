@@ -21,12 +21,14 @@ nav_order: 3
       <p><a href="../assets/tabs/Jasmine_Flower.pdf" target="_blank">茉莉花 (Jasmine Flower)</a>, a Chinese folk song</p>
 
       <p><a href="../assets/tabs/Auld_Lang_Syne.pdf" target="_blank">Auld Lang Syne</a>, a Scottish folk song [<a href="https://www.instagram.com/p/Cty2Ps2rEMO/" target="_blank">video</a>]</p>
-      
+
       <p><a href="../assets/tabs/Blue_Roses_Falling.pdf" target="_blank">Blue Roses Falling</a> by Jake Shimabukuro [<a href="https://www.youtube.com/watch?v=fzvFqVZvDV8" target="_blank">video</a>]</p>
 
       <p><a href="../assets/tabs/Blumenkranz.pdf" target="_blank">Blumenkranz</a> by Hiroyuki Sawano [<a href="https://youtu.be/2M-CiPkU2JU" target="_blank">video</a>]</p>
 
       <p><a href="../assets/tabs/Cello_Suite_No_1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
+
+      <p><a href="../assets/tabs/Inferno.pdf" target="_blank">Inferno</a> by Hiroyuki Sawano</p>
 
       <p><a href="../assets/tabs/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> by mabanua</p>
 
