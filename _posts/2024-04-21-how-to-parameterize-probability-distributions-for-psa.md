@@ -12,7 +12,7 @@ In probabilistic sensitivity analysis (PSA), model parameters are repeatedly sam
 
 The choice of probability distribution for a given parameter depends on the parameter's range. If the parameter is constrained between 0 and 1, the beta distribution is commonly used, otherwise the normal or gamma distributions are a good choice.
 
-Typically, for each parameter, we will have a base case value $$(B)$$, a lower value $$(L)$$, and an upper value $$(U)$$. One common approach to designing a probability distribution is to assume $$B$$ is the median, and $$L$$ and $$U$$ are the 2.5<sup>th</sup> and 97.5<sup>th</sup> percentiles, i.e., the bounds of the 95% confidence interval.
+Typically, for each parameter, we will have a base case value ($$B$$), a lower value ($$L$$), and an upper value ($$U$$). One common approach to designing a probability distribution is to assume $$B$$ is the median, and $$L$$ and $$U$$ are the 2.5<sup>th</sup> and 97.5<sup>th</sup> percentiles, i.e., the bounds of the 95% confidence interval.
 
 This tutorial will explain how to parameterize the normal, beta, and gamma distributions under the above assumption.
 

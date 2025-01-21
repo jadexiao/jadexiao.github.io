@@ -16,9 +16,9 @@ Survival curve fitting requires individual patient data (IPD) as an input. IPD c
 * $$D(t)$$: The number of any-cause deaths by time $$t$$ since diagnosis.
 * $$C(t)$$: The number of patients lost to follow-up by time $$t$$ since diagnosis.
 
-Constructing IPD for observed survival is straightforward since $$N(t), D(t), C(t)$$ can be used directly. Constructing IPD for relative survival is not straightforward because $$N(t), D(t), C(t)$$ need to be adjusted to reflect cancer deaths only. This tutorial will demonstrate how to do so.
+Constructing IPD for observed survival is straightforward since $$N(t)$$, $$D(t)$$, $$C(t)$$ can be used directly. Constructing IPD for relative survival is not straightforward because $$N(t)$$, $$D(t)$$, $$C(t)$$ need to be adjusted to reflect cancer deaths only. This tutorial will demonstrate how to do so.
 
-<p><b><font color='#B509AC'>MASSIVE DISCLAIMER!</font></b><font color='#B509AC'> I am in no way claiming that this is the right thing to do. To be totally correct, i.e., abiding by the definition of relative survival, one should generate IPD for observed and expected survival, fit the curves separately, then compute relative survival as their ratio. The below method is simply a hack to quickly generate relative survival curves. It will not preserve the relationship between observed, expected, and relative survival after curve fitting. Proceed with caution.</font></p>
+<p><b><font color='#B509AC'>MASSIVE DISCLAIMER!!!</font></b><font color='#B509AC'> I am in no way claiming that this is the right thing to do. To be totally correct, i.e., abiding by the definition of relative survival, one should generate IPD for observed and expected survival, fit the curves separately, then compute relative survival as their ratio. The below method is simply a hack to quickly generate relative survival curves. It will not preserve the relationship between observed, expected, and relative survival after curve fitting. Proceed with caution.</font></p>
 
 Let $$R(t)$$ denote the *interval* (NOT cumulative) relative survival probabilities. This tells us the proportion of patients from time $$t-1$$ who are still alive at time $$t$$ for $$t>0$$, with $$R(0)=1$$. 
 
@@ -38,7 +38,7 @@ To verify that this does indeed generate $$R(t)$$, we can apply the usual formul
 
 $$R^\ast(t)=1-\frac{D^\ast(t)}{N^\ast(t)-C^\ast(t)/2}$$
 
-using the actuarial method, or simply
+using the actuarial method, or simply:
 
 $$R^\ast(t)=1-\frac{D^\ast(t)}{N^\ast(t)}$$
 
@@ -48,4 +48,4 @@ The remaining step is to construct the IPD itself. The precise methodology is de
 
 <!-- Below is a sample calculation using SEER data for stage I breast cancer diagnosed at age 50 years:
 
-<img src="assets/img/2025-01-07-how-to-construct-individual-patient-data-from-SEER-relative-survival-curves-1.png"> -->
+<img src="2025-01-07-how-to-construct-individual-patient-data-from-SEER-relative-survival-curves-1.png"> -->
