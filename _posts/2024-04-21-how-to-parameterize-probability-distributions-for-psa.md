@@ -30,7 +30,7 @@ $${\rm Normal}\bigg(B,\ \frac{B-L}{1.96}\bigg).$$
 
 There is no analytical way to do this so we have to resort to some kind of calibration approach. Here is an example using simulated annealing in R:
 
-{% highlight R linenos %}
+{% highlight R %}
  library(GenSA)
  
  # Quantile targets
@@ -62,7 +62,7 @@ There is no analytical way to do this so we have to resort to some kind of calib
 
 Same as the beta distribution, we have to use calibration. Simply replace the previous score function with:
 
-{% highlight R linenos %}
+{% highlight R %}
  score <- function(params) {
    est <- qgamma(c(0.025, 0.5, 0.975), shape = params[1], scale = params[2])
    return(sum((est - target)^2))
