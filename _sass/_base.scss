@@ -119,6 +119,14 @@ blockquote {
 
 .news {
   margin-top: 2rem;
+
+  th {
+    width: 13%;
+  }
+
+  td {
+    padding-left: 10px;
+  }
 }
 
 @media (min-width: 576px) {
