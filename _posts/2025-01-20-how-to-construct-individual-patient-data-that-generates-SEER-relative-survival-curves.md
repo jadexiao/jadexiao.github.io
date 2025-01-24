@@ -46,6 +46,12 @@ for the Kaplan-Meier method, with $$t\ge0$$.
 
 The remaining step is to construct the IPD itself. The precise methodology is detailed elsewhere, e.g., [Hoyle et al. (2011)](https://doi.org/10.1186/1471-2288-11-139).
 
-<!-- Below is a sample calculation using SEER data for stage I breast cancer diagnosed at age 50 years:
+Below is a sample calculation using SEER data for stage I breast cancer diagnosed at age 50 years:
 
-<img src="2025-01-07-how-to-construct-individual-patient-data-from-SEER-relative-survival-curves-1.png"> -->
+<p style="margin-top: 25px"></p>
+
+<img src="{{site.baseurl}}/assets/img/blog/2025-01-20-how-to-construct-individual-patient-data-that-generates-SEER-relative-survival-curves-1.png" style="width: 100%">
+
+<p style="margin-top: 25px"></p>
+
+<img src="{{site.baseurl}}/assets/img/blog/2025-01-20-how-to-construct-individual-patient-data-that-generates-SEER-relative-survival-curves-2.png" style="width: 81.85%">
