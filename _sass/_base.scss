@@ -66,30 +66,6 @@ blockquote {
   text-align: center;
 }
 
-// Card
-
-// .card {
-//   background-color: var(--global-card-bg-color);
-
-//   img {
-//     width: 100%;
-//   }
-
-//   .card-title {
-//     color: var(--global-text-color);
-//   }
-
-//   .card-item {
-//     width: auto;
-//     margin-bottom: 10px;
-
-//     .row {
-//       display: flex;
-//       align-items: center;
-//     }
-//   }
-// }
-
 // Citation
 
 .citation, .citation-number {
@@ -119,11 +95,9 @@ blockquote {
 
 .news {
   margin-top: 2rem;
-
   th {
     width: 13%;
   }
-
   td {
     padding-left: 10px;
   }
@@ -136,6 +110,15 @@ blockquote {
     .address {
       p { display: block; }
     }
+  }
+
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-collapse li {
+    padding-bottom: 0 !important;
   }
 }
 
@@ -158,6 +141,12 @@ blockquote {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-collapse li:last-child {
+  padding-bottom: 20px;
 }
 
 .navbar .dropdown-menu {
@@ -177,10 +166,10 @@ blockquote {
 
 .dropdown-item {
   color: var(--global-text-color);
-    &:hover {
-      color: var(--global-hover-color);
-      background-color: var(--global-bg-color);
-    }
+  &:hover {
+    color: var(--global-hover-color);
+    background-color: var(--global-bg-color);
+  }
 }
 
 .navbar.navbar-light {
@@ -211,10 +200,11 @@ blockquote {
   }
 
   .navbar-brand.social {
-    padding-bottom: 0;
-    padding-top: 0;
-    font-size: 1.7rem;
+    font-size: 1.6em;
     a {
+      i {
+        padding-top: 8px;
+      }
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
@@ -228,45 +218,47 @@ blockquote {
   }
 }
 
-// .navbar-toggler {
-//   .icon-bar {
-//     display: block;
-//     width: 22px;
-//     height: 2px;
-//     background-color: var(--global-text-color);
-//     border-radius: 1px;
-//     margin-bottom: 4px;
-//     transition: all 0.2s;
-//   }
+.navbar-toggler {
+  .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--global-text-color);
+    border-radius: 1px;
+    margin-bottom: 4px;
+    transition: all 0.2s;
+  }
 
-//   .top-bar {
-//     transform: rotate(45deg);
-//     transform-origin: 10% 10%;
-//   }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
 
-//   .middle-bar {
-//     opacity: 0;
-//   }
+  .middle-bar {
+    opacity: 0;
+  }
 
-//   .bottom-bar {
-//     transform: rotate(-45deg);
-//     transform-origin: 10% 90%;
-//   }
-// }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+}
 
-// .navbar-toggler.collapsed {
-//   .top-bar {
-//     transform: rotate(0);
-//   }
+.navbar-toggler.collapsed {
+  padding-top: 10px;
+  
+  .top-bar {
+    transform: rotate(0);
+  }
 
-//   .middle-bar {
-//     opacity: 1;
-//   }
+  .middle-bar {
+    opacity: 1;
+  }
 
-//   .bottom-bar {
-//     transform: rotate(0);
-//   }
-// }
+  .bottom-bar {
+    transform: rotate(0);
+  }
+}
 
 #light-toggle {
   padding: 0;
@@ -297,10 +289,6 @@ blockquote {
       }
     }
   }
-
-  // .contact-note {
-  //   font-size: 0.8rem;
-  // }
 }
 
 // Footer
@@ -319,7 +307,7 @@ footer.fixed-bottom {
 
   .container {
     color: var(--global-footer-text-color);
-    padding-top: 9px;
+    padding-top: 8px;
     padding-bottom: 8px;
   }
 }
@@ -331,51 +319,6 @@ footer.sticky-bottom {
   padding-bottom: 40px;
   font-size: 0.9rem;
 }
-
-// CV
-
-// .cv {
-//   margin-bottom: 40px;
-
-//   .card {
-//     background-color: var(--global-card-bg-color);
-//     border: 1px solid var(--global-divider-color);
-//     padding-top: 20px;
-//     padding-left: 20px;
-//     padding-right: 20px;
-
-//     .list-group-item {
-//       padding-top: 16px;
-//       padding-bottom: 8px;
-//       background-color: inherit;
-
-//       .badge {
-//         color: var(--global-card-bg-color) !important;
-//         background-color: var(--global-theme-color) !important;
-//       }
-//     }
-
-//     .list-group-item:first-child {
-//       padding-top: 8px;
-//     }
-
-//     .list-group-item:last-child {
-//       padding-bottom: 20px;
-//     }
-
-//     .items:last-child {
-//       padding-bottom: 6px;
-//     }
-//   }
-// }
-
-// Repositories
-
-// @media (min-width: 768px) {
-//   .repo {
-//     max-width: 50%;
-//   }
-// }
 
 // Blog
 
@@ -465,49 +408,6 @@ footer.sticky-bottom {
     text-decoration: none;
   }
 }
-
-// Projects
-
-// .projects {
-//   a {
-//     text-decoration: none;
-//     &:hover {
-//       .card-title {
-//         color: var(--global-theme-color);
-//       }
-//     }
-//   }
-// 
-//   .card {
-//     img {
-//       width: 100%;
-//     }
-//   }
-// 
-//   .card-item {
-//     width: auto;
-//     margin-bottom: 10px;
-// 
-//     .row {
-//       display: flex;
-//       align-items: center;
-//     }
-//   }
-// 
-//   .grid-sizer, .grid-item {
-//     width: 250px;
-//     margin-bottom: 10px;
-//   }
-// 
-//   h2.category {
-//     color: var(--global-divider-color);
-//     border-bottom: 1px solid var(--global-divider-color);
-//     padding-top: 0.5rem;
-//     margin-top: 2rem;
-//     margin-bottom: 1rem;
-//     text-align: right;
-//   }
-// }
 
 // Publications
 
