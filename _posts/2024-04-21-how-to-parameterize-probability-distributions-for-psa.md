@@ -3,7 +3,7 @@ layout: post
 title: how to parameterize probability distributions for PSA
 date: 2024-04-21
 description:
-tags: tutorials code simulation cea
+tags: cea code simulation tutorials 
 categories:
 ---
 *This is a joint blog post with <a href="https://www.andrewelhabr.com/" target="_blank">Andrew ElHabr</a>.*

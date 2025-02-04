@@ -3,7 +3,7 @@ layout: post
 title: how to construct individual patient data that generates SEER relative survival curves
 date: 2025-01-20
 description:
-tags: tutorials code simulation survival seer
+tags: code simulation survival tutorials
 categories:
 ---
 The National Cancer Institute's (NCI's) Surveillance, Epidemiology, and End Results (SEER) cancer statistics database provides three different types of summary survival curves:
@@ -44,7 +44,7 @@ $$R^\ast(t)=1-\frac{D^\ast(t)}{N^\ast(t)}$$
 
 for the Kaplan-Meier method, with $$t\ge0$$.
 
-The remaining step is to construct the IPD itself. The precise methodology is detailed elsewhere, e.g., [Hoyle et al. (2011)](https://doi.org/10.1186/1471-2288-11-139).
+The remaining step is to construct the IPD itself. The precise methodology is detailed elsewhere, e.g., <a href="https://doi.org/10.1186/1471-2288-11-139" target="_blank">Hoyle et al. (2011)</a>.
 
 Below is a sample calculation using SEER data for stage I breast cancer diagnosed at age 50 years:
 
