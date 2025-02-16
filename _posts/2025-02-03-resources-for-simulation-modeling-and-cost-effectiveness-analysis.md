@@ -39,5 +39,10 @@ These are some good resources for standard inputs to (US-based) simulation model
 
 <p style="margin-top: 25px"></p>
 
+**Temporal cost conversion**
+* <a href="https://fred.stlouisfed.org/data/CPIMEDSL" target="_blank">Consumer Price Index (CPI)</a>: The CPI ratio between a previous year and the current year can be used to convert historical prices to current day prices.
+
+<p style="margin-top: 25px"></p>
+
 **Age-related quality-of-life weights**
 * Hanmer J, Lawrence WF, Anderson JP, Kaplan RM, Fryback DG. Report of nationally representative values for the noninstitutionalized US adult population for 7 health-related quality-of-life scores. <i>Med Decis Making</i> 2006;26(4):391-400. <a href="https://doi.org/10.1177/0272989X06290497" target="_blank">https://doi.org/10.1177/0272989X06290497</a>
