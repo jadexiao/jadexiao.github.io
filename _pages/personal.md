@@ -32,6 +32,8 @@ nav_order: 3
 
       <p><a href="../assets/music/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> by mabanua [<a href="https://youtu.be/EbbYiBJqyPU" target="_blank">video</a>]</p>
 
+      <p><a href="../assets/music/No_Ordinary_Girl.pdf" target="_blank">No Ordinary Girl</a> from H20: Just Add Water OST</p>
+
       <p><a href="../assets/music/Reflection.pdf" target="_blank">Reflection</a> from Mulan OST</p>
 
       <p><a href="../assets/music/Short_Hair.pdf" target="_blank">Short Hair</a> from Mulan OST [<a href="https://youtu.be/Po1aShL07iY" target="_blank">video</a>]</p>

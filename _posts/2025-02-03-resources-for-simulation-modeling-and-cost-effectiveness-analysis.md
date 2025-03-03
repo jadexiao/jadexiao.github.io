@@ -13,7 +13,7 @@ These are some good resources for standard inputs to (US-based) simulation model
 <p style="margin-top: 25px"></p>
 
 **Demographics**
-* <a href="https://www.census.gov/topics/population/age-and-sex/data/tables.html">United States Census Bureau Age and Sex Tables</a>
+* <a href="https://www.census.gov/topics/population/age-and-sex/data/tables.html"  target="_blank">United States Census Bureau Age and Sex Tables</a>
 
 <p style="margin-top: 25px"></p>
 
