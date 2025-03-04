@@ -30,9 +30,11 @@ nav_order: 3
 
       <p><a href="../assets/music/Inferno.pdf" target="_blank">Inferno</a> by Hiroyuki Sawano</p>
 
+      <p><a href="../assets/music/Inferno_(v2).pdf" target="_blank">Inferno (v2)</a> by Hiroyuki Sawano</p>
+
       <p><a href="../assets/music/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> by mabanua [<a href="https://youtu.be/EbbYiBJqyPU" target="_blank">video</a>]</p>
 
-      <p><a href="../assets/music/No_Ordinary_Girl.pdf" target="_blank">No Ordinary Girl</a> from H20: Just Add Water OST</p>
+      <p><a href="../assets/music/No_Ordinary_Girl.pdf" target="_blank">No Ordinary Girl</a> from H2O: Just Add Water OST</p>
 
       <p><a href="../assets/music/Reflection.pdf" target="_blank">Reflection</a> from Mulan OST</p>
 
