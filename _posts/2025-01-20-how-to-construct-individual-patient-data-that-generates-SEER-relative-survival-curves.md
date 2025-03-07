@@ -26,23 +26,17 @@ The number of patients under observation does not change, so:
 
 $$N^\ast(t)=N(t).$$
 
-The number of cancer deaths is given by the formulae:
-
-$$D^\ast(t)=\frac{\big(2N(t)-D(t)-C(t)\big)\big(1-R(t)\big)}{1+R(t)}.$$
-
 The number of censored cases should be augmented with the number of non-cancer deaths, since their death from other causes effectively renders their time of cancer death unobservable:
 
 $$C^\ast(t)=C(t)+D(t)-D^\ast(t).$$
 
-To verify that this does indeed generate $$R(t)$$, we can apply the usual formulae:
+Now since we are reframing cancer survival as observed survival, we have the following relationship (using the actuarial method):
 
-$$R^\ast(t)=1-\frac{D^\ast(t)}{N^\ast(t)-C^\ast(t)/2}$$
+$$R(t)=1-\frac{D^\ast(t)}{N^\ast(t)-\tfrac{1}{2}C^\ast(t)}.$$
 
-for the actuarial method, or simply:
+Solving for $$D^\ast(t)$$ yields:
 
-$$R^\ast(t)=1-\frac{D^\ast(t)}{N^\ast(t)}$$
-
-for the Kaplan-Meier method, with $$t\ge0$$.
+$$D^\ast(t)=\frac{\big(2N(t)-C(t)-D(t)\big)\big(1-R(t)\big)}{1+R(t)}.$$
 
 The remaining step is to construct the IPD itself. The precise methodology is detailed elsewhere, e.g., <a href="https://doi.org/10.1186/1471-2288-11-139" target="_blank">Hoyle et al. (2011)</a>.
 
