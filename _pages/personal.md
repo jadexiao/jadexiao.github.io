@@ -46,7 +46,9 @@ nav_order: 3
 
       <p>And some piano too.</p>
 
-      <p><a href="../assets/music/If_You_Love_Me_For_Me.pdf" target="_blank">If You Love Me For Me</a> by Arnie Roth [<a href="https://www.youtube.com/watch?v=SMe10v_rRbo">video</a>]</p>
+      <p><a href="../assets/music/piano_If_You_Love_Me_For_Me.pdf" target="_blank">If You Love Me For Me</a> by Arnie Roth [<a href="https://www.youtube.com/watch?v=SMe10v_rRbo" target="_blank">video</a>]</p>
+
+      <p><a href="../assets/music/piano_Inferno.pdf" target="_blank">Inferno</a> by Hiroyuki Sawano [<a href="https://youtu.be/-eRd8akV9Mk?feature=shared&t=107" target="_blank">video</a>]</p>
     </div>
   </div>
 </div>
