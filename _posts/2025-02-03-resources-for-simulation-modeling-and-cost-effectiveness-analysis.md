@@ -13,17 +13,14 @@ These are some good resources for standard inputs to (US-based) simulation model
 <p style="margin-top: 25px"></p>
 
 **Demographics**
-* <a href="https://www.census.gov/topics/population/age-and-sex/data/tables.html"  target="_blank">United States Census Bureau Age and Sex Tables</a>
+* <a href="https://www.census.gov/topics/population/age-and-sex/data/tables.html" target="_blank">United States Census Bureau - Age and Sex Tables</a>
+* <a href="https://wonder.cdc.gov/single-race-population.html" target="_blank">CDC WONDER Single-Race Population Estimates
 
 <p style="margin-top: 25px"></p>
 
-**Background mortality**
+**Mortality**
 * <a href="https://www.lifetable.de" target="_blank">Human Life-Table Database</a>: Collated life tables for 142 regions over many years with stratification by age, sex, race, etc.
-
-<p style="margin-top: 25px"></p>
-
-**Mortality rates**
-* <a href="https://wonder.cdc.gov/ucd-icd10-expanded.html" target="_blank">CDC WONDER</a>: Incidence of death stratified by cause of death, year, region, age, race, etc.
+* <a href="https://wonder.cdc.gov/ucd-icd10-expanded.html" target="_blank">CDC WONDER Underlying Cause of Death</a>: Mortality rates stratified by cause of death, year, region, age, sex, race, etc.
 
 <p style="margin-top: 25px"></p>
 
@@ -46,3 +43,9 @@ These are some good resources for standard inputs to (US-based) simulation model
 
 **Age-related quality-of-life weights**
 * Hanmer J, Lawrence WF, Anderson JP, Kaplan RM, Fryback DG. Report of nationally representative values for the noninstitutionalized US adult population for 7 health-related quality-of-life scores. <i>Med Decis Making</i> 2006;26(4):391-400. <a href="https://doi.org/10.1177/0272989X06290497" target="_blank">https://doi.org/10.1177/0272989X06290497</a>
+
+<p style="margin-top: 25px"></p>
+
+**Cancer**
+* <a href="https://wonder.cdc.gov/cancer.html" target="_blank">CDC WONDER Cancer Statistics</a>: Incidence and mortality rates stratified by cancer site, year, region, age, sex, race, etc.
+* <a href="https://gis.cdc.gov/Cancer/USCS/#/AtAGlance/" target="_blank">Cancer Statistics</a>: Incidence and mortality rates, survival, prevalence, screening adherence, risk factors.
