@@ -42,7 +42,7 @@ These are some good resources for standard inputs to (US-based) simulation model
 <p style="margin-top: 25px"></p>
 
 **Age-related quality-of-life weights**
-* Hanmer J, Lawrence WF, Anderson JP, Kaplan RM, Fryback DG. Report of nationally representative values for the noninstitutionalized US adult population for 7 health-related quality-of-life scores. <i>Med Decis Making</i> 2006;26(4):391-400. <a href="https://doi.org/10.1177/0272989X06290497" target="_blank">https://doi.org/10.1177/0272989X06290497</a>
+* Hanmer J, Lawrence WF, Anderson JP, et al. Report of nationally representative values for the noninstitutionalized US adult population for 7 health-related quality-of-life scores. <i>Med Decis Making</i> 2006;26(4):391-400. <a href="https://doi.org/10.1177/0272989X06290497" target="_blank">https://doi.org/10.1177/0272989X06290497</a>
 
 <p style="margin-top: 25px"></p>
 
