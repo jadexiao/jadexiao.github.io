@@ -44,9 +44,17 @@ blockquote {
   padding: 1em;
 }
 
-.fa-external-link {
-  margin-left: 2px;
+.ai-orcid {
   font-size: 0.95em;
+}
+
+.fa-github {
+  font-size: 0.96em;
+}
+
+.fa-external-link-alt {
+  margin-left: 3px;
+  font-size: 0.88em;
 }
 
 // Math
@@ -153,7 +161,7 @@ blockquote {
 }
 
 .navbar-collapse li:last-child {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 
 .navbar .dropdown-menu {
@@ -211,12 +219,6 @@ blockquote {
     a {
       i {
         padding-top: 8px;
-      }
-      .ai-orcid {
-        font-size: 0.915em;
-      }
-      .ai-google-scholar-square {
-        font-size: 0.97em;
       }
       i::before {
         color: var(--global-text-color);
