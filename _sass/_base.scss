@@ -44,6 +44,11 @@ blockquote {
   padding: 1em;
 }
 
+.fa-external-link {
+  margin-left: 2px;
+  font-size: 0.95em;
+}
+
 // Math
 
 .equation {
@@ -96,6 +101,7 @@ blockquote {
 .news {
   margin-top: 2rem;
   th {
+    padding: 0;
     font-size: 1rem;
     width: 14%;
   }
@@ -201,10 +207,16 @@ blockquote {
   }
 
   .navbar-brand.social {
-    font-size: 1.6em;
+    font-size: 1.8em;
     a {
       i {
         padding-top: 8px;
+      }
+      .ai-orcid {
+        font-size: 0.915em;
+      }
+      .ai-google-scholar-square {
+        font-size: 0.97em;
       }
       i::before {
         color: var(--global-text-color);
