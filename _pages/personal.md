@@ -32,6 +32,8 @@ nav_order: 3
 
       <p><a href="../assets/music/Inferno_(v2).pdf" target="_blank">Inferno (v2)</a> from Promare OST</p>
 
+      <p><a href="../assets/music/In_My_Life.pdf" target="_blank">In My Life</a> by The Beatles <a href="https://youtu.be/0kjNS91o1E4?feature=shared&t=1724" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+
       <p><a href="../assets/music/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> from MEGALOBOX OST <a href="https://youtu.be/EbbYiBJqyPU" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
       <p><a href="../assets/music/No_Ordinary_Girl.pdf" target="_blank">No Ordinary Girl</a> from H2O: Just Add Water OST <a href="https://youtu.be/bfkm9qLmin0" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
