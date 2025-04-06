@@ -50,7 +50,7 @@ These are some good resources for standard inputs to (US-based) simulation model
 * <a href="https://wonder.cdc.gov/cancer.html" target="_blank">CDC WONDER Cancer Statistics</a>: Incidence and mortality rates stratified by cancer site, year, region, age, sex, race, etc.
 * <a href="https://gis.cdc.gov/Cancer/USCS/#/AtAGlance/" target="_blank">Cancer Statistics</a>: Incidence and mortality rates, survival, prevalence, screening adherence, risk factors.
 
-** Continous-time agent-based modeling using ConcurrentSim (formerly SimJulia)**
+**Continous-time agent-based modeling using ConcurrentSim (formerly SimJulia)**
 * <a href="SimJulia Documentation" target="_blank">SimJulia Documentation</a>: Webpage format.
 * <a href="https://simjuliajl.readthedocs.io/_/downloads/en/stable/pdf/" target="_blank">SimJulia Documentation</a>: PDF format.
 * <a href="https://juliadynamics.github.io/ConcurrentSim.jl/stable/" target="_blank">ConcurrentSim Documentation</a>: Webpage format; newer but less comprehensive than the SimJulia documentation.
