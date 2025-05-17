@@ -34,6 +34,8 @@ nav_order: 3
 
       <p><a href="../assets/music/In_My_Life.pdf" target="_blank">In My Life</a> by The Beatles <a href="https://youtu.be/0kjNS91o1E4?feature=shared&t=1724" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
+      <p><a href="../assets/music/I_Could_Use_a_Boost.pdf" target="_blank">I Could Use a Boost</a> from The Wild Robot OST</p>
+
       <p><a href="../assets/music/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> from MEGALOBOX OST <a href="https://youtu.be/EbbYiBJqyPU" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
       <p><a href="../assets/music/No_Ordinary_Girl.pdf" target="_blank">No Ordinary Girl</a> from H2O: Just Add Water OST <a href="https://youtu.be/bfkm9qLmin0" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
@@ -46,7 +48,7 @@ nav_order: 3
       
       <p><a href="../assets/music/Yellow_Bird.pdf" target="_blank">Yellow Bird</a> by Michel Mauléart Monton</p>
 
-      <p><a href="../assets/music/You_and_I.pdf" target="_blank">You and I</a> by Park Bom</p>
+      <p><a href="../assets/music/You_and_I.pdf" target="_blank">You and I</a> by Park Bom <a href="https://youtu.be/vetKp5ANp2c" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
       <p>And some piano too.</p>
 
