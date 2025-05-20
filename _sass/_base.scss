@@ -24,10 +24,12 @@ table {
 
 a, table.table a {
   color: var(--global-theme-color);
+
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
   }
+
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
   }
@@ -90,7 +92,7 @@ blockquote {
 .profile {
   margin-left: 2rem;
   margin-bottom: 1rem;
-  width: 100%;
+  width: 30%;
 
   // .address {
   //   margin-left: -5px;
@@ -108,11 +110,13 @@ blockquote {
 
 .news {
   margin-top: 2rem;
+
   th {
     padding: 0;
     font-size: 1rem;
     width: 14%;
   }
+
   td {
     padding-left: 10px;
   }
@@ -140,8 +144,10 @@ blockquote {
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
+
   a {
     color: inherit;
+
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -167,9 +173,11 @@ blockquote {
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
+
   a:not(.active) {
     color: var(--global-text-color);
   }
+
   a:hover {
     color: var(--global-hover-color);
   }
@@ -181,6 +189,7 @@ blockquote {
 
 .dropdown-item {
   color: var(--global-text-color);
+
   &:hover {
     color: var(--global-hover-color);
     background-color: var(--global-bg-color);
@@ -200,6 +209,7 @@ blockquote {
 
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+
     &:hover {
       color: var(--global-hover-color);
     }
@@ -209,6 +219,7 @@ blockquote {
       background-color: inherit;
       font-weight: bolder;
       color: var(--global-theme-color);
+
       &:hover {
         color: var(--global-hover-color);
       }
@@ -220,10 +231,12 @@ blockquote {
       i {
         padding-top: 8px;
       }
+
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
       }
+
       &:hover {
         i::before {
           color: var(--global-theme-color);
@@ -280,6 +293,7 @@ blockquote {
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+
   &:hover {
     color: var(--global-hover-color);
   }
@@ -292,11 +306,13 @@ blockquote {
 
   .contact-icons {
     font-size: 2.5rem;
+
     a {
       i::before {
         color: var(--global-text-color);
         transition-property: all 0.2s ease-in-out;
       }
+
       &:hover {
         i::before {
           color: var(--global-theme-color);
@@ -312,8 +328,10 @@ footer.fixed-bottom {
   text-align: center;
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+
   a {
     color: var(--global-footer-link-color);
+
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -342,6 +360,7 @@ footer.sticky-bottom {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 3rem;
+
   h1 {
     color: var(--global-theme-color);
     font-size: 5rem;
@@ -369,6 +388,7 @@ footer.sticky-bottom {
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
+
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
@@ -387,6 +407,7 @@ footer.sticky-bottom {
       padding-top: 0.25rem;
       padding-bottom: 0;
     }
+
     a {
       color: var(--global-text-color);
       text-decoration: none;
@@ -401,13 +422,16 @@ footer.sticky-bottom {
   .page-item {
     .page-link {
       color: var(--global-text-color);
+
       &:hover {
         color: $black-color;
       }
     }
+
     &.active .page-link {
       color: $white-color;
       background-color: var(--global-theme-color);
+
       &:hover {
         background-color: var(--global-theme-color);
       }
@@ -438,6 +462,7 @@ footer.sticky-bottom {
   ol.bibliography {
     list-style: none;
     padding: 0;
+
     li {
       padding: 0;
       margin-bottom: 1.5rem;
@@ -453,6 +478,7 @@ footer.sticky-bottom {
       .abbr {
         margin-bottom: 8px;
         margin-right: 40px;
+
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
@@ -470,6 +496,7 @@ footer.sticky-bottom {
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
+
           &:hover {
               border-bottom-style: solid;
               text-decoration: none;
@@ -483,6 +510,7 @@ footer.sticky-bottom {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
+
           &:hover {
               color: var(--global-text-color);
               border-bottom: 1px dashed var(--global-text-color);
@@ -501,6 +529,7 @@ footer.sticky-bottom {
           margin-left: 0rem;
           margin-top: 12px;
           margin-bottom: 0px;
+
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
@@ -518,10 +547,12 @@ footer.sticky-bottom {
         -ms-transition: 0.15s ease;
         -o-transition: 0.15s ease;
         transition: all 0.15s ease;
+
         p {
           line-height: 1.4em;
           margin: 10px;
         }
+
         pre {
           font-size: 1em;
           line-height: 1.4em;
@@ -538,9 +569,11 @@ footer.sticky-bottom {
         -o-transition: 0.15s ease;
         transition: all 0.15s ease;
       }
+
       div.abstract.hidden {
         border: dashed 1px var(--global-bg-color);
       }
+
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
       }
@@ -563,6 +596,7 @@ pre {
   background-color: var(--global-code-bg-color);
   border-radius: 6px;
   padding: 12px 10px;
+
   pre, code {
     background-color: transparent;
     border-radius: 0;
@@ -601,9 +635,11 @@ html.transition *:after {
     font-size: 0.875rem;
     padding-top: 0.25rem;
     padding-bottom: 1rem;
+
     a {
       color: var(--global-text-color-light);
       text-decoration: none;
+      
       &:hover {
         color: var(--global-theme-color);
       }
