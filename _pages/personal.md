@@ -28,6 +28,8 @@ nav_order: 3
 
       <p><a href="../assets/music/Cello_Suite_No_1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
 
+      <p><a href="../assets/music/Hope_Has_Wings.pdf" target="_blank">Hope Has Wings</a> by Brie Larson</p>
+
       <p><a href="../assets/music/Inferno.pdf" target="_blank">Inferno</a> from Promare OST</p>
 
       <p><a href="../assets/music/Inferno_(v2).pdf" target="_blank">Inferno (v2)</a> from Promare OST</p>
@@ -48,7 +50,7 @@ nav_order: 3
       
       <p><a href="../assets/music/Yellow_Bird.pdf" target="_blank">Yellow Bird</a> by Michel Mauléart Monton</p>
 
-      <p><a href="../assets/music/You_and_I.pdf" target="_blank">You and I</a> by Park Bom <a href="https://youtu.be/vetKp5ANp2c" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+      <p><a href="../assets/music/You_and_I.pdf" target="_blank">You and I</a> by Park Bom</p>
 
       <p>And some piano too.</p>
 
