@@ -24,15 +24,13 @@ nav_order: 3
 
       <p><a href="../assets/music/Blue_Roses_Falling.pdf" target="_blank">Blue Roses Falling</a> by Jake Shimabukuro <a href="https://www.youtube.com/watch?v=fzvFqVZvDV8" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
-      <p><a href="../assets/music/Blumenkranz.pdf" target="_blank">Blumenkranz</a> from Kill La Kill OST <a href="https://youtu.be/2M-CiPkU2JU" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+      <p><a href="../assets/music/Blumenkranz.pdf" target="_blank">Blumenkranz</a> from Kill La Kill OST</p>
 
       <p><a href="../assets/music/Cello_Suite_No_1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
 
       <p><a href="../assets/music/Hope_Has_Wings.pdf" target="_blank">Hope Has Wings</a> by Brie Larson</p>
 
       <p><a href="../assets/music/Inferno.pdf" target="_blank">Inferno</a> from Promare OST</p>
-
-      <p><a href="../assets/music/Inferno_(v2).pdf" target="_blank">Inferno (v2)</a> from Promare OST</p>
 
       <p><a href="../assets/music/In_My_Life.pdf" target="_blank">In My Life</a> by The Beatles <a href="https://youtu.be/0kjNS91o1E4?feature=shared&t=1724" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
