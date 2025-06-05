@@ -28,6 +28,8 @@ nav_order: 3
 
       <p><a href="../assets/music/Cello_Suite_No_1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
 
+      <p><a href="../assets/music/Clean.pdf" target="_blank">Clean</a> by Taylor Swift <a href="https://youtu.be/qtKGkdspKHU" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+
       <p><a href="../assets/music/Hope_Has_Wings.pdf" target="_blank">Hope Has Wings</a> by Brie Larson</p>
 
       <p><a href="../assets/music/Inferno.pdf" target="_blank">Inferno</a> from Promare OST</p>
