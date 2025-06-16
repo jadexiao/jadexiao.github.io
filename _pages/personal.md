@@ -14,7 +14,7 @@ nav_order: 3
     <div class="col-8">
       <p>My favourite instrument is the ʻukulele, my lockdown hobby turned lifelong love. I play a Kanileʻa KSR-T Deluxe tenor. You can find some of my tabs below.</p>
 
-      <!-- <p><a href="../assets/music/Arirang.pdf" target="_blank">아리랑 (Arirang)</a>, a Korean folk song</p> -->
+      <p><a href="../assets/music/Arirang.pdf" target="_blank">아리랑 (Arirang)</a> (easy), a Korean folk song</p>
 
       <p><a href="../assets/music/Onara.pdf" target="_blank">오나라 (Onara)</a> from 대장금 (Dae Jang Geum) OST</p>
 
