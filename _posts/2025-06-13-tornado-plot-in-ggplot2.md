@@ -28,7 +28,7 @@ outcome.base <- 10
 # Order by the difference between the High and Low value
 df <- read.csv('DSA.csv') %>%
   group_by(parameter) %>%
-  mutate(diff = sum(abs(outcome))) %>%
+  mutate(diff = sum(abs(outcome - outcome.base))) %>%
   arrange(diff, parameter, direction)
 
 # Keep the top 8 parameters
