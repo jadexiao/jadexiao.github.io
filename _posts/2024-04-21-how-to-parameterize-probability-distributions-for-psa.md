@@ -8,19 +8,19 @@ categories:
 ---
 *This is a joint blog post with <a href="https://www.andrewelhabr.com/" target="_blank">Andrew ElHabr</a>.*
 
-In probabilistic sensitivity analysis (PSA), model parameters are repeatedly sampled from the joint parameter space to generate a set of model runs, also known as PSA iterations.
+In probabilistic sensitivity analysis (PSA), model parameters are repeatedly sampled from the joint parameter space to generate a set of model runs.
 
-The choice of probability distribution for a given parameter depends on the parameter's range. If the parameter is constrained between 0 and 1, the beta distribution is commonly used. If only non-negativity is desired, the gamma distribution is a good choice. If there are no constraints on the parameter's range and probability density is symmetric about the mean, the normal distribution is sufficient.
+Typically, for each parameter, we will have a base case value ($$B$$), a lower value ($$L$$), and an upper value ($$U$$). One common approach to designing a probability distribution is to assume $$B$$ is the median (i.e., the 50<sup>th</sup> percentile), and $$L$$ and $$U$$ are the bounds of the 95% confidence interval (i.e., the 2.5<sup>th</sup> and 97.5<sup>th</sup> percentiles).
 
-Typically, for each parameter, we will have a base case value ($$B$$), a lower value ($$L$$), and an upper value ($$U$$). One common approach to designing a probability distribution is to assume $$B$$ is the median, and $$L$$ and $$U$$ are the 2.5<sup>th</sup> and 97.5<sup>th</sup> percentiles, i.e., the bounds of the 95% confidence interval.
+The choice of probability distribution for a given parameter depends on the parameter's range. If the parameter is constrained between 0 and 1, the beta distribution is commonly used. If only non-negativity is desired, the gamma distribution is a good choice. If there are no constraints on the parameter's range and $$L$$ and $$U$$ are equidistant from $$B$$, the normal distribution should suffice.
 
-This tutorial will explain how to parameterize the normal, beta, and gamma distributions under the above assumption.
+This tutorial explains how to parameterize the normal, beta, and gamma distributions.
 
 <p style="margin-top: 25px"></p>
 
 ##### **Normal distribution**
 
-If $$L$$ and $$U$$ are equidistant from $$B$$ *and* a symmetrical distribution is desired, then the normal distribution is ideal. Recall from high school statistics, that (1) the mean of the normal distribution is equal to its median; and (2) 1.96 standard deviations above and below the mean delineate the 95% confidence interval. Therefore, the distribution we need is:
+Recall from high school statistics, that (1) due to symmetry of the probability density function, the mean and median are equal; and (2) 1.96 standard deviations above and below the mean delineate the 95% confidence interval. Therefore, the distribution we need is simply:
 
 $${\rm Normal}\bigg(B,\ \frac{B-L}{1.96}\bigg).$$
 
@@ -44,7 +44,7 @@ score <- function(params) {
 
 # Upper and lower bounds for shape1 and shape2
 lower <- c(1, 1)
-upper <- c(200, 200)
+upper <- c(1000, 1000)
 
 # Setting the random seed is good practice
 set.seed(1)
@@ -54,6 +54,9 @@ opt <- GenSA(par = mapply(runif, 1, lower, upper),
             fn = score,
             lower = lower,
             upper = upper)
+
+# Extract the optimal parameter values
+opt$par
 {% endhighlight %}
 
 <p style="margin-top: 25px"></p>
@@ -69,8 +72,17 @@ score <- function(params) {
 }
 {% endhighlight %}
 
+You may need to adjust the upper and lower bounds of calibration.
+
 <p style="margin-top: 25px"></p>
 
 ##### **Validation**
 
-The final step is to check that the fitted distribution looks reasonable (make a plot!) and its quantiles do indeed match up with $$B$$, $$L$$, and $$U$$.
+The final step is to check that the fitted distribution looks reasonable and its quantiles do indeed match up with $$B$$, $$L$$, and $$U$$. Here is some plotting code for the beta distribution:
+
+{% highlight R %}
+x <- seq(0, 1, by = 0.001)
+y <- dbeta(x, shape1 = opt$par[1], shape2 = opt$par[2])
+plot(x, y, type = 'l')
+abline(v = target, col = 'red')
+{% endhighlight %}
