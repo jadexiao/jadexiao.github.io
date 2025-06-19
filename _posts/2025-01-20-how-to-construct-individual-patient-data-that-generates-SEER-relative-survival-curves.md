@@ -18,7 +18,7 @@ Survival curve fitting requires individual patient data (IPD) as an input. IPD c
 
 Constructing IPD for observed survival is straightforward since $$N(t)$$, $$D(t)$$, $$C(t)$$ can be used directly. Constructing IPD for relative survival is not straightforward because $$N(t)$$, $$D(t)$$, $$C(t)$$ need to be adjusted to reflect cancer deaths only. This tutorial will demonstrate how to do so.
 
-<p><b><font color='#B509AC'>MASSIVE DISCLAIMER!!!</font></b><font color='#B509AC'> I am in no way claiming that this is the right thing to do. To be totally correct, i.e., abiding by the definition of relative survival, one should generate IPD for observed and expected survival, fit the curves separately, then compute relative survival as their ratio. The below method is simply a hack to quickly generate relative survival curves. It will not preserve the relationship between observed, expected, and relative survival after curve fitting. Proceed with caution.</font></p>
+<p style='color: #B509AC'><strong style='color: #B509AC'>MASSIVE DISCLAIMER!!!</strong> I am in no way claiming that this is the right thing to do. To be totally correct, i.e., abiding by the definition of relative survival, one should generate IPD for observed and expected survival, fit the curves separately, then compute relative survival as their ratio. The below method is simply a hack to quickly generate relative survival curves. It will not preserve the relationship between observed, expected, and relative survival after curve fitting. Proceed with caution.</p>
 
 Let $$R(t)$$ denote the *interval* (NOT cumulative) relative survival probabilities. This tells us the proportion of patients from time $$t-1$$ who are still alive at time $$t$$ for $$t>0$$, with $$R(0)=1$$. 
 
