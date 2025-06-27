@@ -44,6 +44,8 @@ nav_order: 3
 
       <p><a href="../assets/music/Reflection.pdf" target="_blank">Reflection</a> from Mulan OST</p>
 
+      <p><a href="../assets/music/Right_Here_In_My_Arms.pdf" target="_blank">Right Here In My Arms</a> from Barbie as the Island Princess OST</p>
+
       <p><a href="../assets/music/Short_Hair.pdf" target="_blank">Short Hair</a> from Mulan OST <a href="https://youtu.be/Po1aShL07iY" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
       <p><a href="../assets/music/Something.pdf" target="_blank">Something</a> by George Harrison <a href="https://www.youtube.com/watch?v=naJlZujI2Ps" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
