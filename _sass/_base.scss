@@ -109,10 +109,15 @@ blockquote {
 }
 
 .news {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+
+  table {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+  }
 
   th {
-    padding: 0;
     font-size: 1rem;
     width: 14%;
   }
@@ -359,7 +364,7 @@ footer.sticky-bottom {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -386,24 +391,26 @@ footer.sticky-bottom {
 
 .post-list {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding: 0;
 
   li {
     border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
-    padding-top: 2rem;
+    padding-top: 1.8rem;
     padding-bottom: 2rem;
 
     .post-meta {
       color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      margin-bottom: 0;
+      font-size: 0.9rem;
+      padding: 0;
+      margin: 0;
     }
 
     .post-tags {
       color: var(--global-text-color-light);
-      font-size: 0.875rem;
+      font-size: 0.9rem;
+      margin: 0;
       padding-top: 0.25rem;
       padding-bottom: 0;
     }
@@ -454,17 +461,18 @@ footer.sticky-bottom {
   h2.year {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-bottom: -2rem;
+    padding-top: 1.2rem;
+    margin-bottom: -2.3rem;
     text-align: right;
   }
 
   ol.bibliography {
     list-style: none;
+    margin: 0;
     padding: 0;
+    padding-bottom: 1.5rem;
 
     li {
-      padding: 0;
       margin-bottom: 1.5rem;
 
       // .preview {
@@ -476,13 +484,13 @@ footer.sticky-bottom {
       // }
 
       .abbr {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         margin-right: 40px;
 
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
-          margin-top: 5.5px;
+          margin-top: 5px;
           padding-top: 4px;
           padding-bottom: 3px;
           width: 70px;
@@ -581,6 +589,10 @@ footer.sticky-bottom {
     
     li:first-child div:nth-child(2) .title {
       max-width: 85%;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   }
 }

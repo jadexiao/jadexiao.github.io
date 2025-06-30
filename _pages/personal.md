@@ -6,13 +6,13 @@ nav: true
 nav_order: 3
 ---
 
-<div class="container" style="margin-bottom: 20px">
+<div class="container" style="margin-bottom: 3px">
   <div class="row">
     <div class="col-4" style="padding-left: 3px">
       <img src="../assets/img/ukulele.jpg" class="img-fluid z-depth-1 rounded">
     </div>
     <div class="col-8">
-      <p>My favourite instrument is the ʻukulele, my lockdown hobby turned lifelong love. I play a Kanileʻa KSR-T Deluxe tenor. You can find some of my tabs below.</p>
+      <p>My favourite instrument is the ʻukulele, my lockdown hobby turned lifelong love. I play a Kanileʻa KSR-T Deluxe tenor. You can find some of my arrangements below, all in low G tuning.</p>
 
       <p><a href="../assets/music/Arirang.pdf" target="_blank">아리랑 (Arirang)</a>, a Korean folk song</p>
 
@@ -30,7 +30,7 @@ nav_order: 3
 
       <p><a href="../assets/music/Clean.pdf" target="_blank">Clean</a> by Taylor Swift <a href="https://youtu.be/qtKGkdspKHU" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
-      <p><a href="../assets/music/Hope_Has_Wings.pdf" target="_blank">Hope Has Wings</a> by Brie Larson</p>
+      <p><a href="../assets/music/Hope_Has_Wings.pdf" target="_blank">Hope Has Wings</a> from Barbie and the Magic of Pegasus OST</p>
 
       <p><a href="../assets/music/Inferno.pdf" target="_blank">Inferno</a> from Promare OST</p>
 
