@@ -14,7 +14,7 @@ nav_order: 3
     <div class="col-8">
       <p>My favourite instrument is the ʻukulele, my lockdown hobby turned lifelong love. I play a Kanileʻa KSR-T Deluxe tenor. You can find some of my arrangements below, all in low G tuning.</p>
 
-      <p><a href="../assets/music/Arirang.pdf" target="_blank">아리랑 (Arirang)</a>, a Korean folk song</p>
+      <p><a href="../assets/music/Arirang.pdf" target="_blank">아리랑 (Arirang)</a>, a Korean folk song <a href="https://youtu.be/8rvnkf8oOkc" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
       <p><a href="../assets/music/Onara.pdf" target="_blank">오나라 (Onara)</a> from 대장금 (Dae Jang Geum) OST</p>
 
@@ -36,7 +36,7 @@ nav_order: 3
 
       <p><a href="../assets/music/In_My_Life.pdf" target="_blank">In My Life</a> by The Beatles <a href="https://youtu.be/0kjNS91o1E4?feature=shared&t=1724" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
-      <p><a href="../assets/music/I_Could_Use_a_Boost.pdf" target="_blank">I Could Use a Boost</a> from The Wild Robot OST <a href="https://youtu.be/QISR9RiPN6I" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+      <p><a href="../assets/music/I_Could_Use_a_Boost.pdf" target="_blank">I Could Use a Boost</a> from The Wild Robot OST</p>
 
       <p><a href="../assets/music/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> from MEGALOBOX OST <a href="https://youtu.be/EbbYiBJqyPU" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
