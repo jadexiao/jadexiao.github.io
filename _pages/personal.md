@@ -14,7 +14,7 @@ nav_order: 3
     <div class="col-8">
       <p>My favourite instrument is the ʻukulele, my lockdown hobby turned lifelong love. I play a Kanileʻa KSR-T Deluxe tenor. You can find some of my arrangements below, all in low G tuning.</p>
 
-      <p><a href="../assets/music/Arirang.pdf" target="_blank">아리랑 (Arirang)</a>, a Korean folk song <a href="https://youtu.be/8rvnkf8oOkc" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+      <p><a href="../assets/music/Arirang.pdf" target="_blank">아리랑 (Arirang)</a>, a Korean folk song</p>
 
       <p><a href="../assets/music/Onara.pdf" target="_blank">오나라 (Onara)</a> from 대장금 (Dae Jang Geum) OST</p>
 
@@ -28,7 +28,7 @@ nav_order: 3
 
       <p><a href="../assets/music/Cello_Suite_No_1_Prelude.pdf" target="_blank">Cello Suite No. 1 Prélude</a> by J.S. Bach</p>
 
-      <p><a href="../assets/music/Clean.pdf" target="_blank">Clean</a> by Taylor Swift <a href="https://youtu.be/qtKGkdspKHU" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+      <p><a href="../assets/music/Clean.pdf" target="_blank">Clean</a> by Taylor Swift</p>
 
       <p><a href="../assets/music/Hope_Has_Wings.pdf" target="_blank">Hope Has Wings</a> from Barbie and the Magic of Pegasus OST</p>
 
@@ -38,9 +38,9 @@ nav_order: 3
 
       <p><a href="../assets/music/I_Could_Use_a_Boost.pdf" target="_blank">I Could Use a Boost</a> from The Wild Robot OST</p>
 
-      <p><a href="../assets/music/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> from MEGALOBOX OST <a href="https://youtu.be/EbbYiBJqyPU" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+      <p><a href="../assets/music/MEGALOBOX_(Acoustic).pdf" target="_blank">MEGALOBOX (Acoustic)</a> from MEGALOBOX OST <a href="https://youtu.be/UyLwQLqcm5k" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
-      <p><a href="../assets/music/No_Ordinary_Girl.pdf" target="_blank">No Ordinary Girl</a> from H2O: Just Add Water OST <a href="https://youtu.be/bfkm9qLmin0" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
+      <p><a href="../assets/music/No_Ordinary_Girl.pdf" target="_blank">No Ordinary Girl</a> from H2O: Just Add Water OST <a href="https://youtu.be/caFcsZrGPIo" target="_blank"><i class="fas fa-external-link-alt"></i></a></p>
 
       <p><a href="../assets/music/Reflection.pdf" target="_blank">Reflection</a> from Mulan OST</p>
 

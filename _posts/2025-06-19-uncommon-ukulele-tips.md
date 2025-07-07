@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ukulele tips
+title: uncommon ukulele tips
 date: 2025-06-19
 description:
 tags: ukulele
 categories:
 ---
 
-This is a list of ukulele tips that I don't hear talked about often and that were helpful to me.
+This is a list of uncommon ukulele tips that I don't hear talked about often and that were helpful to me.
 
 <p style="margin-top: 25px"></p>
 
