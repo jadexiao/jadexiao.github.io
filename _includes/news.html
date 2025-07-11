@@ -1,4 +1,4 @@
-<div class="news">
+<!-- <div class="news">
   <h2>news</h2>
   {% if site.news != blank -%} 
     {%- assign news_size = site.news | size -%}
@@ -27,4 +27,41 @@
   {%- else -%} 
     <p>No news so far...</p>
   {%- endif %} 
+</div> -->
+
+<div class="news container">
+  <h2>news</h2>
+
+  {% if site.news != blank -%}
+    {%- assign news_size = site.news | size -%}
+    <div class="{% if site.news_scrollable and news_size > 3 %}overflow-auto{% endif %}">
+      {%- assign news = site.news | reverse -%}
+      {% if site.news_limit %}
+        {% assign news_limit = site.news_limit %}
+      {% else %}
+        {% assign news_limit = news_size %}
+      {% endif %}
+
+      <div class="d-flex flex-column gap-2" style="margin-top: -5px">
+        {% for item in news limit: news_limit %}
+          <div class="row" style="margin-top: 15px">
+            <div class="col-md-2 text-muted text-nowrap" style="padding-bottom: 5px">
+              {{ item.date | date: "%b %-d, %Y" }}
+            </div>
+            <div class="col">
+              {% if item.inline -%}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {%- else -%}
+                <a text-decoration-none" href="{{ item.url | relative_url }}">
+                  {{ item.title }}
+                </a>
+              {%- endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {%- else -%}
+    <p class="text-muted">No news so far...</p>
+  {%- endif %}
 </div>
