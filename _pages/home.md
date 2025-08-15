@@ -16,8 +16,8 @@ social: false # includes social icons at the bottom of the page
 
 I am a Data Scientist at [Value Analytics Labs](https://www.valueanalyticslabs.com), where I specialize in health economics and outcomes research (HEOR) with technical expertise in simulation modeling and cost-effectiveness analysis.
 
-I graduated from Georgia Tech with a PhD in Operations Research, advised by Professors Turgay Ayer and Jagpreet Chhatwal.
+I graduated from Georgia Tech with a PhD in Operations Research, advised by Professors Turgay Ayer and Jagpreet Chhatwal. My doctoral thesis comprised work on three disease areas: COVID-19, MASLD (formerly known as NAFLD), and opioid use disorder.
 
-My doctoral thesis comprised work on three current pandemics: COVID-19, metabolic dysfunction-associated steatotic liver disease (MASLD), and opioid addiction. See [`/publications`](/publications) for details!
+My current work is heavily focused on cancer. See [`/publications`](/publications) for details.
 
 <!--<i>I am looking for a research scientist role in the healthcare space starting Summer 2023.</i>-->
