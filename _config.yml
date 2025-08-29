@@ -107,17 +107,6 @@ permalink: /blog/:year/:title/
 pagination:
   enabled: true
 
-# Comments
-disqus_shortname: # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-
-# External sources.
-# If you have blog posts published on medium.com or other exteranl sources,
-# you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  # - name: medium.com
-  #   rss_url: https://medium.com/@al-folio/feed
-
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
@@ -128,9 +117,6 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  # projects:
-  #   output: true
-  #   permalink: /projects/:path/
 
 news_scrollable: false # adds a vertical scroll bar if there are more than 3 news items
 news_limit: # leave blank to include all the news in the `_news` folder
@@ -200,15 +186,13 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: [year, tags] # enables year and tag archives (remove if you need to disable one of them).
   layouts:
     year: archive-year
     tag: archive-tag
-    # category: archive-category
   permalinks:
     year: '/blog/:year/'
     tag: '/blog/tag/:name/'
-    # category: '/blog/category/:name/'
 
 display_tags: [] # this tags will be dispalyed on the front page of your blog
 
@@ -284,15 +268,12 @@ enable_google_analytics:    false  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
-enable_masonry:             true   # enables automatic project cards arangement
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
 enable_darkmode:            true   # enables switching between light/dark modes
 enable_navbar_social:       true   # enables displaying social links in the
                                    # navbar on the home page
-enable_project_categories:  true   # enables categorization of projects into
-                                   # multiple categories
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
 
 # -----------------------------------------------------------------------------
@@ -315,9 +296,6 @@ jquery:
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 mathjax:
   version: "3.2.0"
-masonry:
-  version: "4.2.2"
-  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
 mdb:
   version: "4.20.0"
   integrity:
