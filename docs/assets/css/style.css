@@ -786,6 +786,8 @@ b {
 }
 .blog-text ul, .blog-text ol {
   margin-top: 0.35rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 .blog-text ul:not(:last-child), .blog-text ol:not(:last-child) {
   margin-bottom: 1.25rem;
