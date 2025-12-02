@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>tornado plot in ggplot2 | Jade Xiao</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="tornado plot in ggplot2" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Sharing some general purpose code for making tornado plots in ggplot2." />
+<meta property="og:description" content="Sharing some general purpose code for making tornado plots in ggplot2." />
+<link rel="canonical" href="http://localhost:4000/blog/tornado-plot-in-ggplot2/" />
+<meta property="og:url" content="http://localhost:4000/blog/tornado-plot-in-ggplot2/" />
+<meta property="og:site_name" content="Jade Xiao" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-06-13T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="tornado plot in ggplot2" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-06-13T00:00:00-04:00","datePublished":"2025-06-13T00:00:00-04:00","description":"Sharing some general purpose code for making tornado plots in ggplot2.","headline":"tornado plot in ggplot2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/tornado-plot-in-ggplot2/"},"url":"http://localhost:4000/blog/tornado-plot-in-ggplot2/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- CSS -->
+    <link id="main-stylesheet" rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jade Xiao" /><!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+  </head>
+
+  <body><header class="site-header">
+  <div class="wrapper">
+    <a href="mailto:%6A%78%69%61%6F@%76%61%6C%75%65%61%6E%61%6C%79%74%69%63%73%6C%61%62%73.%63%6F%6D"><i class="social-icon fa-solid fa-paper-plane" style="font-size: 1.3rem; vertical-align: -1.5px; margin-right: 0.2rem;"></i></a>
+    <a href="https://www.linkedin.com/in/jade-xiao/"><i class="social-icon fa-xl fa-brands fa-linkedin" style="margin-right: 0.1rem;"></i></a>
+    <a href="https://scholar.google.com/citations?user=Wy-IbXoAAAAJ"><i class="social-icon ai ai-google-scholar" style="font-size: 1.75rem; vertical-align: -4.5px; margin-right: 0.2rem;"></i></a>
+    <a href="https://www.researchgate.net/profile/Jade_Xiao"><i class="social-icon ai ai-researchgate-square" style="font-size: 1.5rem; vertical-align: -3px; margin-right: 0.2rem;"></i></a>
+    <a href="https://github.com/jadexiao"><i class="social-icon fa-brands fa-github" style="font-size: 1.425rem; vertical-align: -3px;"></i></a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger"/>
+        <label for="nav-trigger">
+          <span class="menu-icon"></span>
+        </label>
+
+        <div class="nav-items">
+  <a class="nav-item" href="/">home</a>
+  <a class="nav-item" href="/research/">research</a>
+  <a class="nav-item" href="/blog/">blog</a>
+  <a class="nav-item" href="/music/">music</a>
+</div>
+
+      </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <p class="post-title" itemprop="name headline">tornado plot in ggplot2</p>
+    
+    <p class="post-meta">
+      <span>June 13, 2025</span>
+      ·
+      <span>
+        
+          <a href="/tag/cea"><i class="fa-regular fa-hashtag"></i>cea</a>
+        
+          <a href="/tag/simulation"><i class="fa-regular fa-hashtag"></i>simulation</a>
+        
+          <a href="/tag/code"><i class="fa-regular fa-hashtag"></i>code</a>
+        
+      </span>
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="blog-text">
+  <p>Sharing some general purpose code for making tornado plots in ggplot2.</p>
+
+  <p>This uses a hack where the outcomes are transformed into deviations from the base case outcome, plotted using <code class="inline-code">geom_bar</code>, and the axis is manually relabelled.</p>
+
+  <p>First, save the data in this format:</p>
+
+  <div class="blog-img">
+    <img style="--large-width: 55%;" src="/assets/img/blog/2025-06-13-tornado-plot-in-ggplot2-1.png" />
+  </div>
+
+  <p>Here is the code:</p>
+
+  
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="w">  </span><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+  </span><span class="n">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span><span class="w">
+  </span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># Base case outcome</span><span class="w">
+  </span><span class="n">outcome.base</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">10</span><span class="w">
+
+  </span><span class="c1"># Order by the difference between the High and Low value</span><span class="w">
+  </span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s1">'DSA.csv'</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+    </span><span class="n">group_by</span><span class="p">(</span><span class="n">parameter</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+    </span><span class="n">mutate</span><span class="p">(</span><span class="n">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="nf">abs</span><span class="p">(</span><span class="n">outcome</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">outcome.base</span><span class="p">)))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+    </span><span class="n">arrange</span><span class="p">(</span><span class="n">diff</span><span class="p">,</span><span class="w"> </span><span class="n">parameter</span><span class="p">,</span><span class="w"> </span><span class="n">direction</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># Keep the top 8 parameters</span><span class="w">
+  </span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">tail</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># Enforce the ordering in the plot</span><span class="w">
+  </span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+    </span><span class="n">mutate</span><span class="p">(</span><span class="n">parameter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">parameter</span><span class="p">,</span><span class="w"> </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">parameter</span><span class="p">)))</span><span class="w">
+
+  </span><span class="c1"># Inspect the minimum and maximum values</span><span class="w">
+  </span><span class="nf">min</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">outcome</span><span class="p">)</span><span class="w"> </span><span class="c1"># -37</span><span class="w">
+  </span><span class="nf">max</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">outcome</span><span class="p">)</span><span class="w"> </span><span class="c1"># 53</span><span class="w">
+
+  </span><span class="c1"># Choose axis labels/breaks/limits based on the range of values</span><span class="w">
+  </span><span class="n">labels</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">-45</span><span class="p">,</span><span class="w"> </span><span class="m">60</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">)</span><span class="w">
+  </span><span class="n">breaks</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">labels</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">outcome.base</span><span class="w">
+  </span><span class="n">limits</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">-45</span><span class="p">,</span><span class="w"> </span><span class="m">60</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">outcome.base</span><span class="w">
+
+  </span><span class="n">ggplot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parameter</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">outcome</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">outcome.base</span><span class="p">,</span><span class="w"> </span><span class="n">fill</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">direction</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">coord_flip</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">geom_bar</span><span class="p">(</span><span class="n">stat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'identity'</span><span class="p">,</span><span class="w"> </span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'identity'</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">geom_hline</span><span class="p">(</span><span class="n">yintercept</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">scale_y_continuous</span><span class="p">(</span><span class="n">breaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">breaks</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">labels</span><span class="p">,</span><span class="w"> </span><span class="n">limits</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">limits</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">geom_text</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">filter</span><span class="p">(</span><span class="n">direction</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'Low'</span><span class="p">,</span><span class="w"> </span><span class="n">outcome</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">outcome.base</span><span class="p">),</span><span class="w">
+              </span><span class="n">aes</span><span class="p">(</span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">),</span><span class="w"> </span><span class="n">vjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">hjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">geom_text</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">filter</span><span class="p">(</span><span class="n">direction</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'Low'</span><span class="p">,</span><span class="w"> </span><span class="n">outcome</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">outcome.base</span><span class="p">),</span><span class="w">
+              </span><span class="n">aes</span><span class="p">(</span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">),</span><span class="w"> </span><span class="n">vjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">hjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">geom_text</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">filter</span><span class="p">(</span><span class="n">direction</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'High'</span><span class="p">,</span><span class="w"> </span><span class="n">outcome</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">outcome.base</span><span class="p">),</span><span class="w">
+              </span><span class="n">aes</span><span class="p">(</span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">),</span><span class="w"> </span><span class="n">vjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">hjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2.5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">geom_text</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> </span><span class="n">filter</span><span class="p">(</span><span class="n">direction</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">'High'</span><span class="p">,</span><span class="w"> </span><span class="n">outcome</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">outcome.base</span><span class="p">),</span><span class="w">
+              </span><span class="n">aes</span><span class="p">(</span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">value</span><span class="p">),</span><span class="w"> </span><span class="n">vjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="n">hjust</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">-1.5</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">xlab</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">ylab</span><span class="p">(</span><span class="s1">''</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">theme_bw</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
+    </span><span class="n">theme</span><span class="p">(</span><span class="n">panel.grid.minor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element_blank</span><span class="p">(),</span><span class="w">
+          </span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element_text</span><span class="p">(</span><span class="n">size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">14</span><span class="p">),</span><span class="w">
+          </span><span class="n">legend.position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'top'</span><span class="p">,</span><span class="w">
+          </span><span class="n">legend.title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element_blank</span><span class="p">(),</span><span class="w">
+          </span><span class="n">legend.key.spacing.x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">unit</span><span class="p">(</span><span class="m">0.75</span><span class="p">,</span><span class="w"> </span><span class="s1">'cm'</span><span class="p">))</span><span class="w">
+  </span></code></pre></figure>
+
+
+  <p>Here is the result:</p>
+
+  <div style="margin-top: -1rem; margin-bottom: -3.6rem;">
+    <img src="/assets/img/blog/2025-06-13-tornado-plot-in-ggplot2-2.png" />
+  </div>
+</div>
+
+  </div>
+</article>
+
+      </div>
+    </main><footer>
+  <div class="footer">
+    &copy; Copyright 2025 Jade Xiao. Last updated: December 01, 2025.
+  </div>
+</footer></body>
+
+</html>

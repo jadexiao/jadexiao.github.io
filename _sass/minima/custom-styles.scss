@@ -1,0 +1,241 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+b {
+    font-weight: 600 !important;
+}
+
+.social-icon {
+    color: black;
+    &:hover { color: $lm-link-base-color }
+}
+
+@media screen and (max-width: $on-medium) {
+    .social-icon {
+        display: none !important;
+    }
+}
+
+.footer {
+  @include relative-font-size(0.75);
+  background-color: black;
+  color: white;
+  padding-top: 0.3rem;
+  padding-bottom: 0.4rem;
+  text-align: center;
+}
+
+.bio {
+    margin-top: -0.5rem;
+}
+
+.inline-code {
+    padding: 3px 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 1px solid $border-color-01;
+    border-radius: 5px;
+}
+
+.pfp {
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 7.5px;
+}
+
+.news-heading {
+    @include relative-font-size(1.75);
+    margin-top: 1rem;
+}
+
+.news > .row {
+    &:not(:last-child) {
+        margin-bottom: 0.75rem;
+    }
+}
+
+.col-news {
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+
+.research {
+    .row:not(:first-child) {
+        padding-top: 0.5rem;
+    }
+    
+    .row > div:last-child {
+        padding-bottom: 0.6rem;
+    }
+
+    p {
+        margin-bottom: 0.1rem;
+    }
+
+    .research-year {
+        font-size: 2.25rem;
+        font-weight: 200 !important;
+        color: lightgrey;
+        text-align: right;
+        line-height: 2.15rem;
+    }
+
+    .research-type, .research-date {
+        background-color: #B509AC;
+        color: white;
+        font-size: 0.7rem;
+        font-weight: 400 !important;
+        padding: 2px 6px;
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .research-date {
+        margin-left: 0.25rem;
+    }
+
+    .research-title {
+        font-weight: 500 !important;
+        margin-top: 0.75rem;
+    }
+
+    .research-journal {
+        font-style: italic;
+    }
+
+    .research-buttons > a {
+        margin-top: 0.6rem;
+        color: #B509AC;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border: 1px solid #B509AC;
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        width: 3.25rem;
+        font-size: 0.8rem;
+
+        &:not(:last-child) {
+            margin-right: 0.4rem;
+        }
+    }
+}
+
+.blog-text {
+    p:not(:last-child) {
+        margin-bottom: 1.25rem;
+    }
+
+    ul, ol {
+        margin-top: 0.35rem;
+        margin-left: 0;
+        margin-right: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 1.25rem;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .blog-section {
+        margin-top: 2rem;
+        font-weight: 500 !important;
+        font-size: 1.2rem;
+    }
+
+    .blog-section-2 {
+        font-weight: 500 !important;
+        font-size: 1.2rem;
+    }
+
+    .blog-list-heading {
+        font-weight: 550 !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .blog-img {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media screen and (min-width: $on-medium) {
+        .blog-img img {
+            width: var(--large-width, 100%);
+        }
+    }
+
+    .highlighted-box {
+        color: #B509AC;
+        background: rgba(#B509AC, 0.05);
+        border-left: 3px solid rgba(#B509AC, 0.15);
+        border-radius: 3px;
+        padding: 0.75rem;
+
+        a {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+    }
+
+    hr {
+        margin-top: 1.65rem !important;
+        margin-bottom: 1.4rem !important;
+    }
+}
+
+.music-section {
+    font-size: 1.35rem;
+    // margin-bottom: 0.5rem;
+}
+
+.ukulele-table, .piano-table {
+    .row {
+        border-bottom: 1px solid $border-color-01;
+        font-size: $small-font-size;
+
+        &:first-child {
+            font-weight: 450 !important;
+        }
+
+        div {
+            padding: 0.25rem 0;
+        }
+    }
+
+    .fa-arrow-up-right-from-square {
+        margin-left: 0.15rem;
+    }
+}
+
+.ukulele-table > .row > div:last-child {
+    text-align: center;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.lyrics {
+  color: grey;
+  font-style: italic;
+  padding-left: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  border-left: 3px solid rgba(200, 200, 200, 0.5);
+}

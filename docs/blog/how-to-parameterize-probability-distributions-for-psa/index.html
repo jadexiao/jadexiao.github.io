@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>how to parameterize probability distributions for PSA | Jade Xiao</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="how to parameterize probability distributions for PSA" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a joint blog post with Andrew ElHabr." />
+<meta property="og:description" content="This is a joint blog post with Andrew ElHabr." />
+<link rel="canonical" href="http://localhost:4000/blog/how-to-parameterize-probability-distributions-for-psa/" />
+<meta property="og:url" content="http://localhost:4000/blog/how-to-parameterize-probability-distributions-for-psa/" />
+<meta property="og:site_name" content="Jade Xiao" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-04-21T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="how to parameterize probability distributions for PSA" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-21T00:00:00-04:00","datePublished":"2024-04-21T00:00:00-04:00","description":"This is a joint blog post with Andrew ElHabr.","headline":"how to parameterize probability distributions for PSA","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/how-to-parameterize-probability-distributions-for-psa/"},"url":"http://localhost:4000/blog/how-to-parameterize-probability-distributions-for-psa/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- CSS -->
+    <link id="main-stylesheet" rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jade Xiao" /><!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+  </head>
+
+  <body><header class="site-header">
+  <div class="wrapper">
+    <a href="mailto:%6A%78%69%61%6F@%76%61%6C%75%65%61%6E%61%6C%79%74%69%63%73%6C%61%62%73.%63%6F%6D"><i class="social-icon fa-solid fa-paper-plane" style="font-size: 1.3rem; vertical-align: -1.5px; margin-right: 0.2rem;"></i></a>
+    <a href="https://www.linkedin.com/in/jade-xiao/"><i class="social-icon fa-xl fa-brands fa-linkedin" style="margin-right: 0.1rem;"></i></a>
+    <a href="https://scholar.google.com/citations?user=Wy-IbXoAAAAJ"><i class="social-icon ai ai-google-scholar" style="font-size: 1.75rem; vertical-align: -4.5px; margin-right: 0.2rem;"></i></a>
+    <a href="https://www.researchgate.net/profile/Jade_Xiao"><i class="social-icon ai ai-researchgate-square" style="font-size: 1.5rem; vertical-align: -3px; margin-right: 0.2rem;"></i></a>
+    <a href="https://github.com/jadexiao"><i class="social-icon fa-brands fa-github" style="font-size: 1.425rem; vertical-align: -3px;"></i></a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger"/>
+        <label for="nav-trigger">
+          <span class="menu-icon"></span>
+        </label>
+
+        <div class="nav-items">
+  <a class="nav-item" href="/">home</a>
+  <a class="nav-item" href="/research/">research</a>
+  <a class="nav-item" href="/blog/">blog</a>
+  <a class="nav-item" href="/music/">music</a>
+</div>
+
+      </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <p class="post-title" itemprop="name headline">how to parameterize probability distributions for PSA</p>
+    
+    <p class="post-meta">
+      <span>April 21, 2024</span>
+      ·
+      <span>
+        
+          <a href="/tag/cea"><i class="fa-regular fa-hashtag"></i>cea</a>
+        
+          <a href="/tag/simulation"><i class="fa-regular fa-hashtag"></i>simulation</a>
+        
+          <a href="/tag/code"><i class="fa-regular fa-hashtag"></i>code</a>
+        
+      </span>
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="blog-text">
+  <p><i>This is a joint blog post with <a href="https://www.andrewelhabr.com/" target="_blank">Andrew ElHabr</a>.</i></p>
+
+  <p>In probabilistic sensitivity analysis (PSA), model parameters are repeatedly sampled from the joint parameter space to generate a set of model runs.</p>
+
+  <p>Typically, for each parameter, we will have a base case value (\(B\)), a lower value (\(L\)), and an upper value (\(U\)). One common approach to designing a probability distribution is to assume \(B\) is the median (i.e., the 50<sup>th</sup> percentile), and \(L\) and \(U\) are the bounds of the 95% confidence interval (i.e., the 2.5<sup>th</sup> and 97.5<sup>th</sup> percentiles).</p>
+
+  <p>The choice of probability distribution for a given parameter depends on the parameter's range. If the parameter is constrained between 0 and 1, the beta distribution is commonly used. If only non-negativity is desired, the gamma distribution is a good choice. If there are no constraints on the parameter's range and \(L\) and \(U\) are equidistant from \(B\), the normal distribution should suffice.</p>
+
+  <p>This tutorial explains how to parameterize the normal, beta, and gamma distributions.</p>
+
+  <p class="blog-section">Normal distribution</p>
+
+  <p>Recall from high school statistics, that (1) due to symmetry of the probability density function, the mean and median are equal; and (2) 1.96 standard deviations above and below the mean delineate the 95% confidence interval. Therefore, the distribution we need is simply:</p>
+
+  <p class="text-center">\(\displaystyle {\rm Normal}\bigg(B,\ \frac{B-L}{1.96}\bigg).\)</p>
+
+  <p class="blog-section">Beta distribution</p>
+
+  <p>There is no analytical way to do this so we have to resort to some kind of calibration approach. Here is an example using simulated annealing in R:</p>
+
+  
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="w">  </span><span class="n">library</span><span class="p">(</span><span class="n">GenSA</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># Quantile targets</span><span class="w">
+  </span><span class="n">target</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="w"> </span><span class="n">B</span><span class="p">,</span><span class="w"> </span><span class="n">U</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># MSE between estimated quantiles and target quantiles</span><span class="w">
+  </span><span class="n">score</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">params</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">est</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">qbeta</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">0.025</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.975</span><span class="p">),</span><span class="w"> </span><span class="n">shape1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">shape2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="nf">sum</span><span class="p">((</span><span class="n">est</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+
+  </span><span class="c1"># Upper and lower bounds for shape1 and shape2</span><span class="w">
+  </span><span class="n">lower</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
+  </span><span class="n">upper</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">1000</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># Setting the random seed is good practice</span><span class="w">
+  </span><span class="n">set.seed</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># Run calibration</span><span class="w">
+  </span><span class="n">opt</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">GenSA</span><span class="p">(</span><span class="n">par</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mapply</span><span class="p">(</span><span class="n">runif</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">lower</span><span class="p">,</span><span class="w"> </span><span class="n">upper</span><span class="p">),</span><span class="w">
+              </span><span class="n">fn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="p">,</span><span class="w">
+              </span><span class="n">lower</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lower</span><span class="p">,</span><span class="w">
+              </span><span class="n">upper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">upper</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># Extract the optimal parameter values</span><span class="w">
+  </span><span class="n">opt</span><span class="o">$</span><span class="n">par</span><span class="w">
+  </span></code></pre></figure>
+
+
+  <p class="blog-section">Gamma distribution</p>
+
+  <p>Same as the beta distribution, we have to use calibration. Simply replace the previous score function with:</p>
+
+  
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="w">  </span><span class="n">score</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">params</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">est</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">qgamma</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">0.025</span><span class="p">,</span><span class="w"> </span><span class="m">0.5</span><span class="p">,</span><span class="w"> </span><span class="m">0.975</span><span class="p">),</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">scale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">params</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+    </span><span class="nf">return</span><span class="p">(</span><span class="nf">sum</span><span class="p">((</span><span class="n">est</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="o">^</span><span class="m">2</span><span class="p">))</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  </span></code></pre></figure>
+
+
+  <p>You may need to adjust the upper and lower bounds of calibration.</p>
+
+  <p class="blog-section">Validation</p>
+
+  <p>The final step is to check that the fitted distribution looks reasonable and its quantiles do indeed match up with \(B\), \(L\), and \(U\). Here is some plotting code for the beta distribution:</p>
+
+  
+<figure class="highlight"><pre><code class="language-r" data-lang="r"><span class="w">  </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0.001</span><span class="p">)</span><span class="w">
+  </span><span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">dbeta</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">shape1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">opt</span><span class="o">$</span><span class="n">par</span><span class="p">[</span><span class="m">1</span><span class="p">],</span><span class="w"> </span><span class="n">shape2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">opt</span><span class="o">$</span><span class="n">par</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+  </span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'l'</span><span class="p">)</span><span class="w">
+  </span><span class="n">abline</span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">target</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'red'</span><span class="p">)</span><span class="w">
+  </span></code></pre></figure>
+
+</div>
+
+  </div>
+</article>
+
+      </div>
+    </main><footer>
+  <div class="footer">
+    &copy; Copyright 2025 Jade Xiao. Last updated: December 01, 2025.
+  </div>
+</footer></body>
+
+</html>

@@ -1,0 +1,12 @@
+_site
+.bundle
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.DS_Store
+.Rhistory
+.Rapp.history
+.ruby-version
+.tweet-cache
+vendor
+.mscbackup

@@ -1,0 +1,23 @@
+---
+layout: base
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <p class="post-title" itemprop="name headline">{{ page.title | escape }}</p>
+    
+    <p class="post-meta">
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      ·
+      <span>
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tag/{{ tag }}"><i class="fa-regular fa-hashtag"></i>{{ tag }}</a>
+        {% endfor %}
+      </span>
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>

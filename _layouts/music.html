@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <p class="post-title" itemprop="name headline">{{ page.title | escape }}</p>
+
+    <p class="post-meta">
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      ·
+      <span>
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tag/{{ tag }}"><i class="fa-regular fa-hashtag"></i>{{ tag }}</a>
+        {% endfor %}
+      </span>
+    </p>
+  </header>
+
+  <video controls poster="{{ site.baseurl }}/assets/img/thumbnails/{{ page.title }}.png">
+    <source src="{{ site.baseurl }}/assets/mov/{{ page.title }}.mov" type="video/mp4">
+  </video>
+  
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

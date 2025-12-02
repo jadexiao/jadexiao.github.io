@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>how to construct individual patient data that generates SEER relative survival curves | Jade Xiao</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="how to construct individual patient data that generates SEER relative survival curves" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The National Cancer Institute&#39;s (NCI&#39;s) Surveillance, Epidemiology, and End Results (SEER) cancer statistics database provides three different types of summary survival curves:" />
+<meta property="og:description" content="The National Cancer Institute&#39;s (NCI&#39;s) Surveillance, Epidemiology, and End Results (SEER) cancer statistics database provides three different types of summary survival curves:" />
+<link rel="canonical" href="http://localhost:4000/blog/how-to-construct-individual-patient-data-that-generates-SEER-relative-survival-curves/" />
+<meta property="og:url" content="http://localhost:4000/blog/how-to-construct-individual-patient-data-that-generates-SEER-relative-survival-curves/" />
+<meta property="og:site_name" content="Jade Xiao" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-01-20T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="how to construct individual patient data that generates SEER relative survival curves" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-01-20T00:00:00-05:00","datePublished":"2025-01-20T00:00:00-05:00","description":"The National Cancer Institute&#39;s (NCI&#39;s) Surveillance, Epidemiology, and End Results (SEER) cancer statistics database provides three different types of summary survival curves:","headline":"how to construct individual patient data that generates SEER relative survival curves","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/how-to-construct-individual-patient-data-that-generates-SEER-relative-survival-curves/"},"url":"http://localhost:4000/blog/how-to-construct-individual-patient-data-that-generates-SEER-relative-survival-curves/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- CSS -->
+    <link id="main-stylesheet" rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jade Xiao" /><!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+  </head>
+
+  <body><header class="site-header">
+  <div class="wrapper">
+    <a href="mailto:%6A%78%69%61%6F@%76%61%6C%75%65%61%6E%61%6C%79%74%69%63%73%6C%61%62%73.%63%6F%6D"><i class="social-icon fa-solid fa-paper-plane" style="font-size: 1.3rem; vertical-align: -1.5px; margin-right: 0.2rem;"></i></a>
+    <a href="https://www.linkedin.com/in/jade-xiao/"><i class="social-icon fa-xl fa-brands fa-linkedin" style="margin-right: 0.1rem;"></i></a>
+    <a href="https://scholar.google.com/citations?user=Wy-IbXoAAAAJ"><i class="social-icon ai ai-google-scholar" style="font-size: 1.75rem; vertical-align: -4.5px; margin-right: 0.2rem;"></i></a>
+    <a href="https://www.researchgate.net/profile/Jade_Xiao"><i class="social-icon ai ai-researchgate-square" style="font-size: 1.5rem; vertical-align: -3px; margin-right: 0.2rem;"></i></a>
+    <a href="https://github.com/jadexiao"><i class="social-icon fa-brands fa-github" style="font-size: 1.425rem; vertical-align: -3px;"></i></a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger"/>
+        <label for="nav-trigger">
+          <span class="menu-icon"></span>
+        </label>
+
+        <div class="nav-items">
+  <a class="nav-item" href="/">home</a>
+  <a class="nav-item" href="/research/">research</a>
+  <a class="nav-item" href="/blog/">blog</a>
+  <a class="nav-item" href="/music/">music</a>
+</div>
+
+      </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <p class="post-title" itemprop="name headline">how to construct individual patient data that generates SEER relative survival curves</p>
+    
+    <p class="post-meta">
+      <span>January 20, 2025</span>
+      ·
+      <span>
+        
+          <a href="/tag/simulation"><i class="fa-regular fa-hashtag"></i>simulation</a>
+        
+          <a href="/tag/code"><i class="fa-regular fa-hashtag"></i>code</a>
+        
+      </span>
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="blog-text">
+    <p>The National Cancer Institute's (NCI's) Surveillance, Epidemiology, and End Results (SEER) cancer statistics database provides three different types of summary survival curves:</p>
+
+    <ul>
+        <li><b>Observed survival:</b> The proportion of patients who have not died of any cause by time \(t\) since diagnosis.</li>
+        <li><b>Expected survival:</b> The *expected* proportion of patients who have not died of any cause by time \(t\) since diagnosis, based on the all-cause mortality of a comparable group of people with respect to age, sex, race, calendar year, etc.</li>
+        <li><b>Relative survival:</b> The proportion of patients who have not died of cancer by time \(t\) since diagnosis, computed as the ratio of observed to expected survival.</li>
+    </ul>
+
+    <p> Survival curve fitting requires individual patient data (IPD) as an input. IPD can be constructed from counts of patients, deaths, and censored cases, which the SEER database provides in the following format:</p>
+
+    <ul>
+        <li>\(N(t)\): The number of patients still under observation by time \(t\) since diagnosis.</li>
+        <li>\(D(t)\): The number of any-cause deaths by time \(t\) since diagnosis.</li>
+        <li>\(C(t)\): The number of patients lost to follow-up by time \(t\) since diagnosis.</li>
+    </ul>
+
+    <p>Constructing IPD for observed survival is straightforward since \(N(t)\), \(D(t)\), \(C(t)\) can be used directly. Constructing IPD for relative survival is not straightforward because \(N(t)\), \(D(t)\), \(C(t)\) need to be adjusted to reflect cancer deaths only. This tutorial will demonstrate how to do so.</p>
+
+    <p style="color: #B509AC"><strong style="color: #B509AC">MASSIVE DISCLAIMER!!!</strong> I am in no way claiming that this is the right thing to do. To be totally correct, i.e., abiding by the definition of relative survival, one should generate IPD for observed and expected survival, fit the curves separately, then compute relative survival as their ratio. The below method is simply a hack to quickly generate relative survival curves. It will not preserve the relationship between observed, expected, and relative survival after curve fitting. Proceed with caution.</p>
+
+    <p>Let \(R(t)\) denote the *interval* (NOT cumulative) relative survival probabilities. This tells us the proportion of patients from time \(t-1\) who are still alive at time \(t\) for \(t&gt;0\), with \(R(0)=1\).</p>
+
+    <p>The number of patients under observation does not change, so:</p>
+
+    <p class="text-center">\(N^\ast(t)=N(t).\)</p>
+
+    <p>The number of censored cases should be augmented with the number of non-cancer deaths, since their death from other causes effectively renders their time of cancer death unobservable:</p>
+
+    <p class="text-center">\(C^\ast(t)=C(t)+D(t)-D^\ast(t).\)</p>
+
+    <p>Now since we are reframing cancer survival as observed survival, we have the following relationship (using the actuarial method):</p>
+
+    <p class="text-center">\(\displaystyle R(t)=1-\frac{D^\ast(t)}{N^\ast(t)-\tfrac{1}{2}C^\ast(t)}.\)</p>
+
+    <p>Solving for \(D^\ast(t)\) yields:</p>
+
+    <p class="text-center">\(\displaystyle D^\ast(t)=\frac{\big(2N(t)-C(t)-D(t)\big)\big(1-R(t)\big)}{1+R(t)}.\)</p>
+
+    <p>The remaining step is to construct the IPD itself. The precise methodology is detailed elsewhere, e.g., <a href="https://doi.org/10.1186/1471-2288-11-139" target="_blank">Hoyle et al. (2011)</a>.</p>
+
+    <p>Below is a sample calculation using SEER data for stage I breast cancer diagnosed at age 50 years:</p>
+
+    <div class="blog-img">
+        <img style="--large-width: 100%" src="/assets/img/blog/2025-01-20-how-to-construct-individual-patient-data-that-generates-SEER-relative-survival-curves-1.png" />
+    </div>
+
+    <div>
+        <img style="width: 81.85%" src="/assets/img/blog/2025-01-20-how-to-construct-individual-patient-data-that-generates-SEER-relative-survival-curves-2.png" />
+    </div>
+</div>
+
+  </div>
+</article>
+
+      </div>
+    </main><footer>
+  <div class="footer">
+    &copy; Copyright 2025 Jade Xiao. Last updated: December 01, 2025.
+  </div>
+</footer></body>
+
+</html>
