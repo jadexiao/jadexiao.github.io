@@ -205,9 +205,18 @@ permalink: /music/
     <div class="row">
         <div class="col-5">
             <a href="{{ site.baseurl }}/piano/ASHES Inferno.pdf" target="_blank">ΛSHES→Inferno</a>
+            <a href="https://www.youtube.com/watch?v=HH-0_e0iPMY" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             <a href="https://www.youtube.com/watch?v=-eRd8akV9Mk" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
         <div class="col-7">プロメア (Promare) OST</div>
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <a href="{{ site.baseurl }}/piano/Call of Silence.pdf" target="_blank">Call of Silence</a>
+            <a href="https://www.youtube.com/watch?v=YszbP0ZwEWU" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://www.youtube.com/watch?v=fDqX-K8xrks" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="col-7">進撃の巨人 (Attack on Titan) OST</div>
     </div>
     <div class="row">
         <div class="col-5">

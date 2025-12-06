@@ -80,8 +80,7 @@ b {
         line-height: 2.15rem;
     }
 
-    .research-type, .research-date {
-        background-color: #B509AC;
+    .research-type, .research-date, .research-award {
         color: white;
         font-size: 0.7rem;
         font-weight: 400 !important;
@@ -91,7 +90,17 @@ b {
         text-align: center;
     }
 
+    .research-type {
+        background-color: #B509AC;
+    }
+
     .research-date {
+        background-color: #B509AC;
+        margin-left: 0.25rem;
+    }
+
+    .research-award {
+        background-color: #ED7D32;
         margin-left: 0.25rem;
     }
 

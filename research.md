@@ -93,6 +93,7 @@ permalink: /research/
         <div class="col">
             <span class="research-type">POSTER</span>
             <span class="research-date">2025-05-13</span>
+            <span class="research-award">TOP 5% FINALIST</span>
             <p class="research-title">
                 MSR112 Can Multi-Cancer Early Detection Tests Reduce Cancer Mortality?
             </p>

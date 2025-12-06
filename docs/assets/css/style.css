@@ -743,8 +743,7 @@ b {
   text-align: right;
   line-height: 2.15rem;
 }
-.research .research-type, .research .research-date {
-  background-color: #B509AC;
+.research .research-type, .research .research-date, .research .research-award {
   color: white;
   font-size: 0.7rem;
   font-weight: 400 !important;
@@ -753,7 +752,15 @@ b {
   display: inline-block;
   text-align: center;
 }
+.research .research-type {
+  background-color: #B509AC;
+}
 .research .research-date {
+  background-color: #B509AC;
+  margin-left: 0.25rem;
+}
+.research .research-award {
+  background-color: #ED7D32;
   margin-left: 0.25rem;
 }
 .research .research-title {
